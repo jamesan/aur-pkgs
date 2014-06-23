@@ -1,0 +1,115 @@
+# Maintainer: James An <james@jamesan.ca>
+# Contributor: <nixtrian@gmail.com>
+_pkgname=wine64
+pkgname=$_pkgname-git
+pkgver=r101653.889cce4
+pkgrel=1
+pkgdesc="A compatibility layer for running Windows programs. Latest GIT version. x86_64 arch only."
+arch=('x86_64')
+url="http://www.winehq.com/"
+license=('LGPL')
+
+depends=(
+  fontconfig
+  libxcursor
+  libxrandr
+  libxdamage
+  libxi
+  gettext
+  freetype2
+  glu
+  libsm
+  gcc-libs
+  desktop-file-utils
+)
+
+makedepends=(autoconf ncurses bison perl fontforge flex prelink
+  'gcc>=4.5.0-2'
+  giflib
+  libpng
+  gnutls
+  libxinerama
+  libxcomposite
+  libxmu
+  libxxf86vm
+  libxml2
+  libldap
+  lcms2
+  mpg123
+  openal
+  v4l-utils
+  alsa-lib
+  libxcomposite
+  mesa
+  mesa-libgl
+  libcl
+  samba
+  git
+)
+  
+optdepends=(
+  giflib
+  libpng
+  libldap
+  gnutls
+  lcms2
+  libxml2
+  mpg123
+  openal
+  v4l-utils
+  libpulse
+  alsa-plugins
+  alsa-lib
+  libjpeg-turbo
+  libxcomposite
+  libxinerama
+  ncurses
+  libcl
+  cups
+  samba           dosbox
+)
+
+# Check if libowfat is installed.
+# It has to be removed because WINE cannot be build if installed.
+# Thanks to haagch 
+if [ -f /usr/lib/libowfat.a ]; then
+    msg2 "Error: libowfat.a detected. Please remove the libowfat package. WINE cannot be build if installed."
+    exit 0;
+fi
+
+provides=("wine-wow64=$pkgver" 'wine')
+conflicts=('wine-wow64' 'wine')
+replaces=('wine-wow64' 'wine')
+options=('!libtool')
+install=wine.install
+source=("$_pkgname::git://source.winehq.org/git/wine.git")
+md5sums=('SKIP')
+
+pkgver() {
+  cd "$srcdir/$_pkgname"
+  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+}
+
+build() {
+  cd "$srcdir/$_pkgname"
+
+  # ncurses fix
+  sed -i 's|libncurses|libncursesw|g' "$srcdir/$_pkgname/configure"
+  sed -i 's|lncurses|lncursesw|g' "$srcdir/$_pkgname/configure"
+
+  ./configure --prefix=/usr \
+              --libdir=/usr/lib \
+              --with-x \
+              --without-gstreamer \
+              --enable-win64
+    # Gstreamer was disabled for FS#33655
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+
+  make prefix="$pkgdir/usr" \
+    libdir="$pkgdir/usr/lib" \
+    dlldir="$pkgdir/usr/lib/wine" install
+}
