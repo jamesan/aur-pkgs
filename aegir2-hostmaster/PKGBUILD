@@ -1,0 +1,22 @@
+# Maintainer: James An <james@jamesan.ca>
+pkgname=('aegir2-hostmaster')
+pkgver=2.1
+pkgrel=1
+pkgdesc="Meta-Drupal hosting system - front end"
+arch=('any')
+url="http://aegirproject.org/"
+license=('GPL')
+depends=('aegir2-provision' 'apache' 'drush>=5.5' 'git' 'mysql-clients' 'php' 'php-apache' 'unzip')
+optdepends=('php-gd: asdf'
+            'mysql: ')
+options=(!strip docs)
+install="${pkgname}.install"
+source=(hosting-queued.service)
+md5sums=('b37becc9306e8c85276a3cb0b1dee2c8')
+
+package() {
+    msg2 "Adding systemd service unit"
+    mkdir -p "$pkgdir"/usr/lib/systemd/system
+    install -m644 hosting-queued.service "$pkgdir"/usr/lib/systemd/system
+    #systemctl daemon-reload
+}

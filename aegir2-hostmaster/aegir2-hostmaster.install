@@ -1,0 +1,57 @@
+#!/bin/sh
+
+set -e
+
+AEGIRHOME="$(su aegir -s /bin/sh -c 'echo $HOME')"
+VERSION=${VERSION:-`sed -n '/^version/{s/^.*= *//;p}' /usr/share/drush/commands/provision/provision.info`}
+MAKEFILE=${MAKEFILE:-}
+WEBSERVER=${WEBSERVER:-apache}
+AEGIR_SITE_URI=${AEGIR_SITE_URI:-`hostname -f`}
+AEGIR_DB_HOST=${AEGIR_DB_HOST:-localhost}
+AEGIR_DB_USER=${AEGIR_DB_USER:-root}
+AEGIR_DB_PASS=${AEGIR_DB_PASS:-}
+EMAIL=${EMAIL:-aegir@`hostname -f`}
+
+post_install() {
+    FLAGS="--yes"
+    [ -z "$MAKEFILE" ] || FLAGS="$FLAGS --makefile='$MAKEFILE'"
+    [ -z "$WEBSERVER" ] || FLAGS="$FLAGS --http_service_type='$WEBSERVER'"
+
+    # make sure the configuration file exists before symlinking it in place (below)
+    touch $AEGIRHOME/config/$WEBSERVER.conf
+    # fix permissions on installed directories
+    chown aegir:aegir "$AEGIRHOME" "$AEGIRHOME/config" "$AEGIRHOME/config/$WEBSERVER.conf"
+        
+    if [ -d $AEGIRHOME/.drush/provision ]; then
+        echo "existing provision in $AEGIRHOME/.drush/provision detected, move away and try again"
+        exit 1
+    fi
+
+    # pass data through JSON for extra security
+    su -s /bin/sh aegir -c "cd $AEGIRHOME && drush hostmaster-install $FLAGS --backend $AEGIR_SITE_URI 2>&1 | drush backend-parse" <<EOF
+{ "yes": 1,
+"version": "$VERSION",
+"aegir_db_host": "$AEGIR_DB_HOST",
+"aegir_db_user": "$AEGIR_DB_USER",
+"aegir_db_pass": "$AEGIR_DB_PASS",
+"client_email": "$EMAIL"
+}
+EOF
+
+    echo 'Enabling hosting-queued daemon'
+    su -s /bin/sh aegir -c 'drush @hostmaster pm-enable -y hosting_queued'
+    systemctl start hosting-queued
+
+    echo "$AEGIRHOME/config/$WEBSERVER.conf" >> /etc/httpd/conf/httpd.conf
+        
+    # this will ensure that this script aborts if the site can't be bootstrapped
+    if su -s /bin/sh aegir -c 'drush @hostmaster status' 2>&1 | grep -q 'Drupal bootstrap.*Successful'; then
+        echo 'Aegir frontend bootstrap correctly, operation was a success!'
+        echo 'Use this URL to login on your new site:'
+        su -s /bin/sh aegir -c 'drush @hostmaster uli'
+    else
+        echo 'Aegir frontend failed to bootstrap, something went wrong!'
+        echo 'Look at the log above for clues.'
+        exit 1
+    fi
+}

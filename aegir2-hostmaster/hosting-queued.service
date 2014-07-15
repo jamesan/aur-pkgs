@@ -1,6 +1,6 @@
 [Unit]
 Description=Aegir queue daemon
-After=local-fs.target network.target mysqld.service php-fpm.service
+After=local-fs.target network.target mysqld.service httpd.service
 
 [Service]
 Type=simple
