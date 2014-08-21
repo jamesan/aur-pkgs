@@ -8,7 +8,7 @@ pkgrel=6
 pkgdesc="XML-Filter-DOMFilter-LibXML perl module (SAX filter allowing DOM processing of selected subtrees)"
 arch=("i686" "x86_64")
 url="http://search.cpan.org/dist/XML-Filter-DOMFilter-LibXML/"
-license=("unknown")
+license=("GPL" "Artistic")
 depends=('perl' 'perl-xml-libxml>=1.53')
 source=(http://search.cpan.org/CPAN/authors/id/P/PA/PAJAS/${_realname}-$pkgver.tar.gz)
 md5sums=('9089d02fbd5ff914070af4c3b9142f02')
