@@ -12,7 +12,7 @@ depends=('java-runtime')
 source=("http://harukizaemon.com/$pkgname/$pkgname-$pkgver.tar.gz"
         "$pkgname")
 md5sums=('f0d1ff48f44251f57937f26baca7d60a'
-         'cc8d6a315c3e59c6cf10dc96baa5e0dc')
+         '83707665662bb85d5878ff13421f4c4a')
 
 package() {
     msg2 'Adding executable files...'
