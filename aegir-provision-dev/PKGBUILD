@@ -3,7 +3,7 @@
 pkgname=aegir-provision-dev
 _pkgname=provision
 pkgver=3.0_alpha1
-pkgrel=1
+pkgrel=2
 pkgdesc="mass Drupal hosting system - backend (dev version)"
 arch=('any')
 url='http://aegirproject.org'
@@ -31,8 +31,8 @@ package() {
     find "${pkgdir}/usr/share/doc/${pkgname}" -type d -exec chmod 0755 {} +
 
     msg2 'Adding main files'
-    install -m755 -d "${pkgdir}/usr/share/drush/commands/${_pkgname}"
-    mv * "${pkgdir}/usr/share/drush/commands/${_pkgname}"
-    find "${pkgdir}/usr/share/drush/commands/${_pkgname}" -type f -exec chmod 0644 {} +
-    find "${pkgdir}/usr/share/drush/commands/${_pkgname}" -type d -exec chmod 0755 {} +
+    install -m755 -d "${pkgdir}/usr/share/webapps/drush/commands/${_pkgname}"
+    mv * "${pkgdir}/usr/share/webapps/drush/commands/${_pkgname}"
+    find "${pkgdir}/usr/share/webapps/drush/commands/${_pkgname}" -type f -exec chmod 0644 {} +
+    find "${pkgdir}/usr/share/webapps/drush/commands/${_pkgname}" -type d -exec chmod 0755 {} +
 }
