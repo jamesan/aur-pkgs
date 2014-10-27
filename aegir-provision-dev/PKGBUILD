@@ -3,7 +3,7 @@
 pkgname=aegir-provision-dev
 _pkgname=provision
 pkgver=3.0_alpha1
-pkgrel=2
+pkgrel=3
 pkgdesc="mass Drupal hosting system - backend (dev version)"
 arch=('any')
 url='http://aegirproject.org'
@@ -11,8 +11,22 @@ license=('GPL')
 depends=('drush')
 provides=('aegir-provision')
 conflicts=('aegir-provision')
-source=("http://ftp.drupal.org/files/projects/${_pkgname}-7.x-${pkgver/_/-}.tar.gz")
-md5sums=('9f3a1123c42e048cb2f9e6b7432089b4')
+source=(
+    "http://ftp.drupal.org/files/projects/${_pkgname}-7.x-${pkgver/_/-}.tar.gz"
+    'https://www.drupal.org/files/issues/platform_verify_d8-2306055-14.patch'
+)
+md5sums=(
+    '9f3a1123c42e048cb2f9e6b7432089b4'
+    '13b8f1dda62c5aed513909eb79d42915'
+)
+
+prepare() {
+    cd $_pkgname
+
+    # Issue #2306055
+    msg2 'Patching to fix support in Aegir 3.x for Drupal 8 platforms'
+    patch -p1 -i ../platform_verify_d8-2306055-14.patch
+}
 
 package() {
     cd $_pkgname
