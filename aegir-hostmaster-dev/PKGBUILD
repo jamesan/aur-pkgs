@@ -3,7 +3,7 @@
 pkgname=aegir-hostmaster-dev
 _pkgname=hostmaster
 pkgver=3.0_alpha1
-pkgrel=1
+pkgrel=2
 pkgdesc="mass Drupal hosting system - frontend (dev version)"
 arch=('any')
 url='http://aegirproject.org'
