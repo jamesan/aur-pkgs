@@ -1,4 +1,5 @@
 # Maintainer: grimsock <lord.grimsock at gmail dot com>
+# Contributor: James An <james@jamesan.ca>
 
 pkgname=chromedriver
 pkgver=2.13
