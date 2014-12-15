@@ -4,5 +4,6 @@
 *.log.*
 *.sig
 *.zip
+.AURINFO
 pkg/
 src/
