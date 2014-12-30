@@ -1,0 +1,46 @@
+# $Id$
+# Maintainer: Laszlo Papp <lpapp@kde.org>
+
+pkgname=icecc
+_pkgname=icecream
+pkgver=1.0.1
+pkgrel=4
+pkgdesc="Distributed compiler with a central scheduler to share build load"
+arch=('i686' 'x86_64')
+url="https://github.com/icecc/icecream"
+license=('GPLv2')
+depends=('docbook2x')
+backup=('etc/icecc.conf')
+install='icecc.install'
+source=('https://github.com/icecc/icecream/archive/1.0.1.tar.gz'
+        'icecc.service'
+        'icecc-scheduler.service'
+        'icecc.conf')
+sha1sums=('2c3e43d34e4cbe8da5fa49e0518fd4db4c665f81'
+          '79ce0b85503bc1ca24ecde87e2d3c922f0129ed4'
+          '04b15a883e813e669feb06f2361e0919b7f8b739'
+          'fc8f90e9be356839f7795f0a85eee0715e00af81')
+
+prepare() {
+    sed -i s/docbook-to-man/docbook2man/ "${_pkgname}-${pkgver}/configure.ac"
+}
+
+build() {
+    cd "${_pkgname}-${pkgver}"
+    ./autogen.sh
+    ./configure --prefix=/usr --enable-shared
+    make all
+}
+
+package() {
+    cd "${_pkgname}-${pkgver}"
+    make DESTDIR="${pkgdir}" install
+
+    install -D -m755 "$srcdir"/icecc.conf "$pkgdir/etc/icecc.conf"
+    install -D -m644 ../icecc.service "${pkgdir}/usr/lib/systemd/system/icecc.service"
+    install -D -m644 ../icecc-scheduler.service "${pkgdir}/usr/lib/systemd/system/icecc-scheduler.service"
+
+    # FIXME: Remove this later. It is necessary for the monitor as of now
+    install -D -m755 "$srcdir/${_pkgname}-${pkgver}"/services/logging.h "$pkgdir/usr/include/icecc/logging.h"
+}
+
