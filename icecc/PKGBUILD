@@ -3,23 +3,30 @@
 
 pkgname=icecc
 _pkgname=icecream
-pkgver=1.0.1
-pkgrel=4
+pkgver=1.1rc1
+pkgrel=1
 pkgdesc="Distributed compiler with a central scheduler to share build load"
 arch=('i686' 'x86_64')
-url="https://github.com/icecc/icecream"
+url="https://github.com/$pkgname/$_pkgname"
 license=('GPLv2')
-depends=('docbook2x')
-backup=('etc/icecc.conf')
-install='icecc.install'
-source=('https://github.com/icecc/icecream/archive/1.0.1.tar.gz'
-        'icecc.service'
-        'icecc-scheduler.service'
-        'icecc.conf')
-sha1sums=('2c3e43d34e4cbe8da5fa49e0518fd4db4c665f81'
-          '79ce0b85503bc1ca24ecde87e2d3c922f0129ed4'
-          '04b15a883e813e669feb06f2361e0919b7f8b739'
-          'fc8f90e9be356839f7795f0a85eee0715e00af81')
+depends=(
+'docbook2x'
+'perl-xml-sax-expat'
+)
+backup=("etc/${pkgname}.conf")
+install="${pkgname}.install"
+source=(
+    "https://github.com/$pkgname/$_pkgname/archive/$pkgver.tar.gz"
+    "${pkgname}.service"
+    "${pkgname}-scheduler.service"
+    "${pkgname}.conf"
+)
+md5sums=(
+    'fd2488ecbb62ea2abbd73d263ae674e5'
+    '3383f065c1b42f5fa62546d0ac54dc6d'
+    '37e4509d46e787d7b2963d9337ee189a'
+    '5fe4d4ff6da71787e146a8a69b419f45'
+)
 
 prepare() {
     sed -i s/docbook-to-man/docbook2man/ "${_pkgname}-${pkgver}/configure.ac"
@@ -36,11 +43,15 @@ package() {
     cd "${_pkgname}-${pkgver}"
     make DESTDIR="${pkgdir}" install
 
-    install -D -m755 "$srcdir"/icecc.conf "$pkgdir/etc/icecc.conf"
-    install -D -m644 ../icecc.service "${pkgdir}/usr/lib/systemd/system/icecc.service"
-    install -D -m644 ../icecc-scheduler.service "${pkgdir}/usr/lib/systemd/system/icecc-scheduler.service"
+    install -D -m755 "../${pkgname}.conf" "${pkgdir}/etc/${pkgname}.conf"
+    install -D -m644 "../${pkgname}.service" "${pkgdir}/usr/lib/systemd/system/${pkgname}.service"
+    install -D -m644 "../${pkgname}-scheduler.service" "${pkgdir}/usr/lib/systemd/system/${pkgname}-scheduler.service"
+
+    mv "${pkgdir}/usr/sbin/icecc-scheduler" "${pkgdir}/usr/bin/"
+    mv "${pkgdir}/usr/sbin/iceccd" "${pkgdir}/usr/bin/"
+    rmdir "${pkgdir}/usr/sbin"
 
     # FIXME: Remove this later. It is necessary for the monitor as of now
-    install -D -m755 "$srcdir/${_pkgname}-${pkgver}"/services/logging.h "$pkgdir/usr/include/icecc/logging.h"
+    install -D -m755 services/logging.h "${pkgdir}/usr/include/${pkgname}/logging.h"
 }
 
