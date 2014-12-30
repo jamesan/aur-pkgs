@@ -2,7 +2,7 @@
 
 pkgname=helium
 pkgver=20141230
-pkgrel=1
+pkgrel=2
 pkgdesc="TODO"
 arch=('any')
 url="http://www.clockworkmod.com/carbon"
