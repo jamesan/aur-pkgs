@@ -7,5 +7,6 @@
 *.zip
 *.deb
 *.AURINFO
+*.SRCINFO
 pkg/
 src/
