@@ -1,15 +1,20 @@
+# From: https://github.com/github/gitignore/blob/master/ArchLinuxPackages.gitignore
+
 *.tar
 *.tar.*
+*.zip
 *.tgz
 *.log
 *.log.*
 *.sig
-*.zip
-*.deb
-*.AURINFO
-*.SRCINFO
+
+# AUR metadata
+.AURINFO
+.SRCINFO
+
 pkg/
 src/
 
-# Package specs should not have folders
-**/**/**   
+# Additional patterns not from source
+*.deb
+**/**/**
