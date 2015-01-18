@@ -10,3 +10,6 @@
 *.SRCINFO
 pkg/
 src/
+
+# Package specs should not have folders
+**/**/**   
