@@ -16,18 +16,10 @@ md5sums=('0933171de177066cac4aea171ef1eb39'
          '5b7ff115adcca4d1c59d1516ec357823'
          'aa00b3dd4cc6e24724936ed68b4f365a')
 
-build() {
-    cd "$srcdir"
-}
-
 package() {
-    cd "$srcdir"
+    install -Dm0644 ec2-ssh-keys.service "$pkgdir/usr/lib/systemd/system"
+    install -Dm0644 root-passwd.service "$pkgdir/usr/lib/systemd/system"
 
-    install -m 0755 -d "$pkgdir/usr/lib/systemd/system"
-    install -m 0644 ec2-ssh-keys.service "$pkgdir/usr/lib/systemd/system"
-    install -m 0644 root-passwd.service "$pkgdir/usr/lib/systemd/system"
-
-    install -m 0755 -d "$pkgdir/usr/sbin"
-    install -m 0700 ec2-ssh-keys "$pkgdir/usr/sbin"
-    install -m 0700 randomize-root-password "$pkgdir/usr/sbin"
+    install -Dm0700 ec2-ssh-keys "$pkgdir/usr/bin"
+    install -Dm0700 randomize-root-password "$pkgdir/usr/bin"
 }
