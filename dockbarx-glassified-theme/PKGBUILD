@@ -1,4 +1,5 @@
-# Contributor: twa022 <twa022@gmail.com>
+# Maintainer: twa022 <twa022@gmail.com>
+# Contributor: James An <james@jamesan.ca>
 
 pkgname=dockbarx-glassified-theme
 pkgver=20100327
@@ -10,9 +11,9 @@ license=('GPL')
 depends=('dockbarx')
 groups=('dockbarx-themes')
 source=('http://gnome-look.org/CONTENT/content-files/109283-glassified.tar.gz')
-
-build () {
-  install -D -m644 ${srcdir}/109283-glassified.tar.gz ${pkgdir}/usr/share/dockbarx/themes/Glassified.tar.gz
-}
-
 md5sums=('f095e632de6f3ebce62f83b90d0eca79')
+noextract=('109283-glassified.tar.gz')
+
+package () {
+  install -Dm644 109283-glassified.tar.gz ${pkgdir}/usr/share/dockbarx/themes/Glassified.tar.gz
+}
