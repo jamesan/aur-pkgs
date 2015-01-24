@@ -17,3 +17,4 @@ src/
 
 # Additional patterns not from source
 *.deb
+*.gem
