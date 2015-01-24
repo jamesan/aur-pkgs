@@ -1,4 +1,6 @@
-# http://github.com/redjack/ec2arch-systemd/
+# Maintainer: Douglas Creager <dcreager@dcreager.net>
+# Contributor: James An <james@jamesan.ca>
+
 pkgname=ec2arch-systemd
 pkgver=1.1
 pkgrel=1
