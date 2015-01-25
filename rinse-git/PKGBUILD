@@ -1,29 +1,34 @@
-pkgname=rinse-git
-pkgver=
-pkgrel=2
+# Maintainer: Chris Nixon <chris.nixon@sigma.me.uk>
+# Contributor: James An <james@jamesan.ca>
+
+_pkgname=rinse
+pkgname=$_pkgname-git
+pkgver=3.0.5.r2.g42802da
+pkgrel=1
 pkgdesc="Rinse is a simple tool which is designed to carry out the installation of a new RPM-based distribution."
 arch=('i686' 'x86_64')
-url="http://collab-maint.alioth.debian.org/rinse/"
-groups=()
-depends=()
-makedepends=('git' 'cpio' 'dpkg' 'rpm-org' 'wget' 'perl' 'perl-libwww' 'perl-html-parser' 'perl-uri')
-optdepends=()
-license='GPL, PerlArtistic'
+url="http://collab-maint.alioth.debian.org/$_pkgname"
+depends=('perl' 'perl-term-size' 'perl-libwww' 'rpm2cpio' 'rpm-org' 'wget')
+#makedepends=('git' 'cpio' 'dpkg' 'rpm-org' 'wget' 'perl' 'perl-libwww' 'perl-html-parser' 'perl-uri')
+makedepends=('git')
+license=('GPL' 'PerlArtistic')
 provides=('rinse')
 conflicts=('rinse')
-source=($pkgname::git://git.debian.org/git/collab-maint/rinse.git)
-noextract=()
+source=("$pkgname"::"git+https://anonscm.debian.org/cgit/collab-maint/$_pkgname.git")
 md5sums=('SKIP')
 
 pkgver() {
-    cd "$srcdir/$pkgname" && git fetch --tags
-    git describe --long --tags | sed -r 's/([^-]*-g)/r\1/;s/-/./g'
-}
-
-prepare() {
-    git -C "$srcdir/$pkgname" checkout $(git describe --tags $(git rev-list --tags --max-count=1))
+    cd "$pkgname"
+    (
+        set -o pipefail
+        git describe --long --tag | sed -r 's/([^-]*-g)/r\1/;s/-/./g' ||
+        printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+    )
 }
 
 package() {
     make -C"$srcdir/$pkgname" DESTDIR="$pkgdir/" install
+
+    # Correct sbin location
+    mv "$pkgdir"/usr/{s,}bin
 }
