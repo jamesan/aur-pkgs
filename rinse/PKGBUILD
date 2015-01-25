@@ -5,7 +5,7 @@
 pkgname=rinse
 pkgver=3.0.2
 pkgrel=1
-pkgdesc="a simple tool to install a new RPM-based distribution analogous to debootstrap."
+pkgdesc="A simple tool to install a new RPM-based distribution analogous to debootstrap."
 arch=('any')
 url="http://xen-tools.org/software/$pkgname"
 license=('GPL')
