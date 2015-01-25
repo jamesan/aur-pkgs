@@ -1,27 +1,46 @@
-# Maintainer: sandman <r.coded@gmail.com>
+# Maintainer: Ravindra Singh <r.coded@gmail.com>
+# Contributor: James An <james@jamesan.ca>
 # Contributor: Christoph Siegenthaler <csi@gmx.ch>
 
 pkgname=xprobe2
 pkgver=0.3
-pkgrel=2
-pkgdesc="xprobe2 is an active OS fingerprinting tool"
-url="http://sourceforge.net/apps/mediawiki/xprobe/index.php?title=Main_Page"
-depends=('gcc' 'libpcap')
-source=('http://downloads.sourceforge.net/project/xprobe/xprobe2/Xprobe2%200.3/'$pkgname'-'$pkgver'.tar.gz')
-md5sums=('3ebb89ed9380038d368327816e34ec54')
+pkgrel=3
+pkgdesc="An active OS fingerprinting tool for TCP/IP stacks"
 arch=('i686' 'x86_64')
+url='http://sourceforge.net/apps/mediawiki/xprobe'
 license=('GPL2')
-build(){
-	cd $startdir
-	patch -p1 < ip.patch
-	patch -p1 < misc.patch
-	patch -p1 < tcp.patch
-	cd $startdir/src/$pkgname-$pkgver
-	./configure --prefix=/usr --sysconfdir=/etc
-	make || return 1
+makedepends=('gcc' 'libpcap')
+source=(
+    "http://downloads.sourceforge.net/project/xprobe/$pkgname/${pkgname^}%20$pkgver/$pkgname-$pkgver.tar.gz"
+    ip.patch
+    misc.patch
+    tcp.patch
+)
+md5sums=(
+    '3ebb89ed9380038d368327816e34ec54'
+    'afe57732b82bfd100f1301bff0661d78'
+    'd6a08e8d0b94c750bd5caccab81b9e0f'
+    'e5a1622412523601e084ac74100edaed'
+)
+
+prepare(){
+    cd "$pkgname-$pkgver"
+    for _patch in ../*.patch; do
+        patch -p1 < $_patch
+    done
+}
+
+build() {
+    cd "$pkgname-$pkgver"
+    ./configure --prefix=/usr --sysconfdir=/etc
+    make
 }
 
 package(){
-	cd $startdir/src/$pkgname-$pkgver
-	make DESTDIR=$startdir/pkg install
+    cd "$pkgname-$pkgver"
+    make DESTDIR=$pkgdir install
+
+    # Correct non-standard paths
+    install -dm755 "$pkgdir/usr/share"
+    mv "$pkgdir"/usr/{man,share}
 }
