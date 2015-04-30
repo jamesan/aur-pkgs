@@ -3,7 +3,7 @@
 
 _pkgname=rinse
 pkgname=$_pkgname-git
-pkgver=3.0.5.r2.g42802da
+pkgver=3.0.9.r0.g7d8fb88
 pkgrel=1
 pkgdesc="Rinse is a simple tool which is designed to carry out the installation of a new RPM-based distribution."
 arch=('i686' 'x86_64')
