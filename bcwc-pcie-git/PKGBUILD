@@ -1,0 +1,48 @@
+# Maintainer: James An <james@jamesan.ca>
+
+_pkgname=bcwc_pcie
+pkgname="$_pkgname-git"
+pkgver=r56.b3bdeb7
+pkgrel=1
+pkgdesc='Reverse engineered Linux driver for the Broadcom 1570 PCIe webcam'
+arch=('i686' 'x86_64')
+url="https://github.com/patjak/$_pkgname/wiki"
+license=('GPL')
+depends=()
+makedepends=('git')
+provides=("$_pkgname")
+conflicts=("$_pkgname")
+options=()
+install=
+source=(
+  "$_pkgname"::"git+https://github.com/patjak/bcwc_pcie.git"
+  'support-destdir.patch'
+)
+md5sums=(
+  'SKIP'
+  '969f5a1700d7f4c6bff35897dd5600d7'
+  )
+
+pkgver() {
+  cd "$_pkgname"
+  (
+    set -o pipefail
+    git describe --long --tag | sed -r 's/([^-]*-g)/r\1/;s/-/./g' ||
+    printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+  ) 2>/dev/null
+}
+
+prepare() {
+  cd "$_pkgname"
+  patch -p1 -i ../support-destdir.patch
+}
+
+build() {
+    cd "$_pkgname"
+    make all
+}
+
+package() {
+  cd "$_pkgname"
+  make DESTDIR="$pkgdir" install
+}
