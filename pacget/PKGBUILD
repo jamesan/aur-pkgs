@@ -1,24 +1,48 @@
+# Maintainer: James An <james@jamesan.ca>
 # Contributor: Vladimir Ermakov <vooon341@gmail.com>
 # Contributor: Aurel Canciu <aurelcanciu@gmail.com>
 
 pkgname=pacget
 pkgver=20110531
-pkgrel=1
+pkgrel=2
 pkgdesc="Aria2 Mirror Script"
 arch=('i686' 'x86_64')
 url="http://wiki.archlinux.org/index.php/Improve_Pacman_Performance#Pacget_.28aria2.29_Mirror_Script"
 license=('FDL')
 depends=('aria2')
+conflicts=('pacget-git')
 backup=(etc/pacget.conf)
 install=$pkgname.install
-source=(pacget pacget.conf)
-md5sums=('78420c591e970519c2ea7cb8207cf195'
-         'd0a90dbe184a727163732428abcd0624')
+source=(source.html::https://wiki.archlinux.org/index.php/Improve_pacman_performance)
+md5sums=('5b79e01a43800c0ee6291e9bbdaa025c')
 
-build() {
+prepare() {
+  
+  # Filter the markup by:
+  # - showing only lines between opening and closing tags of pre HTML elements
+  # - filtering out text outside those pre elements (inc. the opening and closing tags)
+  # - showing only lines between the occurrence of /usr\/bin\/pacget
+  cat source.html | \
+    sed -n "/<pre.*<\/pre>/{p;d};/<pre/,/<\/pre>/p" | \
+    sed "s/^.*<pre[^>]*>//;s/<\/pre>.*$//" | \
+    sed -n "/\/usr\/bin\/pacget/,/\/usr\/bin\/pacget/p" | \
+    sed "s/&quot;/\"/g" | \
+    sed "s/&amp;/\\&/g" | \
+    sed "s/&lt;/</g" | \
+    sed "s/&gt;/>/g" >| source
 
-  install -D -m755 $srcdir/pacget $pkgdir/usr/bin/pacget
-  install -D -m644 $srcdir/pacget.conf $pkgdir/etc/pacget.conf
-
+  # Get the contents for pacget
+  cat source | \
+    sed -n "/^\/usr\/bin\/pacget/,/^\/etc\/pacget.conf/p" | \
+    head -n -2 | tail -n +3 >| pacget
+  
+  # Get the contents for pacget.conf
+  cat source | \
+    sed -n "/^\/etc\/pacget.conf/,/^\/usr\/bin\/pacget/p" | \
+    head -n -2 | tail -n +3 >| pacget.conf
 }
 
+package() {
+  install -Dm755 pacget $pkgdir/usr/bin/pacget
+  install -Dm644 pacget.conf $pkgdir/etc/pacget.conf
+}
