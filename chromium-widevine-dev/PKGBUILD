@@ -29,8 +29,20 @@ pkgver() {
   echo "$(strings opt/google/chrome*/chrome | grep -C 1 " (version:" | tail -1)"
 }
 
+prepare() {
+  # Extract EULA text between these opening and closing div tags.
+  sed -n '/<div class="compact">/','/<\/div>/p' eula_text.html | \
+    # Remove in-line strong tags and remove other lines with tags.
+    sed 's/<\/\?strong>//g;/>/d;s/^\s*//' | \
+    # Insert empty line ahead of each numbered list item.
+    sed -r 's/^([0-9]|\([a-z]\)|[a-z]\.)/\n\1/' | \
+    # Insert empty line after EULA headings.
+    sed -r 's/(Google Chrome)( Additional|)( Terms of Service)/\1\2\3\n/' |
+    # Insert empty line before and after date line between the two TOS.
+    sed -r 's/(August 12, 2010)/\n\1\n/' >| eula_text.txt
+}
+
 package() {
   install -Dm755 opt/google/chrome*/libwidevinecdm.so "${pkgdir}/usr/lib/chromium-dev/libwidevinecdm.so"
-
-  install -Dm644 eula_text.html "${pkgdir}/usr/share/licenses/${pkgname}/eula_text.html"
+  install -Dm644 eula_text.txt "${pkgdir}/usr/share/licenses/${pkgname}/eula_text.txt"
 }
