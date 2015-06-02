@@ -12,10 +12,20 @@
 .AURINFO
 .SRCINFO
 
-pkg/
-src/
+# makepkg working folders
+pkg
+src
 
-# Additional patterns not from source
+#
+# Additional ignore patterns:
+#
+
+# Source files
 *.deb
 *.gem
 *.out
+*.rpm
+*.html
+
+# Ignore package source folders
+*/*/*
