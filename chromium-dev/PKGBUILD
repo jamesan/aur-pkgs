@@ -28,6 +28,7 @@ depends=('desktop-file-utils' 'hicolor-icon-theme' 'gtk2' 'icu' 'jsoncpp' 'libex
          'nss' 'pciutils' 're2' 'snappy' 'speech-dispatcher' 'speex' 'ttf-font' 'xdg-utils') #  'opus'  'protobuf'  'libsrtp' 'libevent' 'libvpx'
 makedepends=('elfutils' 'gperf' 'ninja' 'perl-json' 'python2-beautifulsoup3' 'python2-simplejson' 'python2-jinja' 'subversion' 'yasm' 'git') # 'python2-ply'
 makedepends_x86_64=('lib32-gcc-libs' 'lib32-zlib')
+provides=('chromium')
 optdepends=('chromium-pepper-flash-dev: PPAPI Flash Player (Dev Channel)'
             'kdebase-kdialog: Needed for file dialogs in KDE4'
             'kdeutils-kwalletmanager: For storing passwords in KWallet in KDE4'
@@ -35,7 +36,6 @@ optdepends=('chromium-pepper-flash-dev: PPAPI Flash Player (Dev Channel)'
             'kwalletmanager-git: Needed for storing passwords in KWallet in KF5'
             'libappindicator-gtk2: Needed for show systray icon in the panel in plasma-next (KF5)')
 install=chromium-dev.install
-backup=('etc/chromium-dev/default')
 source=("https://commondatastorage.googleapis.com/chromium-browser-official/chromium-${pkgver}.tar.xz"
         "chromium-launcher-${_launcher_ver}.tar.gz::https://github.com/foutrelis/chromium-launcher/archive/v${_launcher_ver}.tar.gz"
         'chromium-dev.desktop'
@@ -340,7 +340,7 @@ prepare() {
 
   # Set Python2 path
   mkdir -p python-path
-  ln -s /usr/bin/python2 "${srcdir}/python-path/python"
+  ln -sf /usr/bin/python2 "${srcdir}/python-path/python"
   export PATH="${srcdir}/python-path:$PATH"
   cd "chromium-${pkgver}"
 
@@ -481,6 +481,7 @@ package() {
   install -Dm755 chrome "${pkgdir}/usr/lib/chromium-dev/chromium-dev"
   install -Dm4755 chrome_sandbox "${pkgdir}/usr/lib/chromium-dev/chrome-sandbox"
   install -Dm755 chromedriver "${pkgdir}/usr/lib/chromium-dev/chromedriver"
+  install -dm755 "${pkgdir}/usr/bin"
   ln -s /usr/lib/chromium-dev/chromedriver "${pkgdir}/usr/bin/chromedriver-dev"
 
   for i in content_resources keyboard_resources resources chrome_100_percent chrome_200_percent; do
