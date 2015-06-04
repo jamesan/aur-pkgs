@@ -1,29 +1,30 @@
+# Maintainer: James An <james@jamesan.ca>
 # Contributor: katanasov <pranayama111@gmail.com>
-# Maintainer: katanasov
+
 pkgname=evolution-on
-pkgver=20141804
+pkgver=0.1.1
 pkgrel=1
-pkgdesc="Plugin to put evolution in system tray."
+pkgdesc='Plugin to put evolution in system tray.'
 arch=('i686' 'x86_64')
-url="https://github.com/KostadinAtanasov/evolution-on"
+url='https://github.com/KostadinAtanasov/evolution-on'
 license=('GPL')
 groups=('office')
 depends=('evolution>=2.30' 'gconf' 'libnotify')
 makedepends=('git' 'autoconf>=2.53' 'automake>=1.8''libtool>=1.4.3' 'glib2>=2.2.0' 'pkgconfig>=0.14.0' 'intltool>=0.25' 'gnome-common>=2.3.0')
-provides=('evolution-on')
 conflicts=('evolution-tray' 'evolution-tray-arch')
 replaces=('evolution-tray' 'evolution-tray-arch')
 install=evolution-on-install
-source=($pkgname-$pkgver.zip::https://github.com/KostadinAtanasov/evolution-on/archive/0.1.1.zip)
-sha1sums=('d65a2bfac67af054a2dea37decec3880d25bcc8a')
+source=("https://github.com/KostadinAtanasov/$pkgname/archive/$pkgver.tar.gz")
+sha1sums=('04a79cc6611854b88f4c07da8d7c5fee9e250fc9')
 
-upstreamname="evolution-on"
-upstreamver="0.1.1"
-
-package() {
-	cd "${srcdir}/${upstreamname}-${upstreamver}"
+build() {
+	cd "$pkgname-$pkgver"
 	./autogen.sh --prefix=/usr
 	make
+}
+
+package() {
+	cd "$pkgname-$pkgver"
 	make DESTDIR="$pkgdir" install
 }
 
