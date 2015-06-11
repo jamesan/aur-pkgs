@@ -2,22 +2,16 @@
 # Contributor: Josh 'jheretic' King <josh at chambana dot net>
 
 pkgname=drush
-pkgver=6.5.0
+pkgver=7.0.0
 pkgrel=1
-pkgdesc="The Drupal command-line shell"
+pkgdesc='The Drupal command-line shell'
 arch=('any')
 url="http://github.com/drush-ops/$pkgname"
 license=('GPL')
 depends=('php' 'bash')
-install=${pkgname}.install
-source=(
-    "http://github.com/drush-ops/$pkgname/archive/$pkgver.tar.gz"
-    'http://download.pear.php.net/package/Console_Table-1.2.1.tgz'
-)
-md5sums=(
-    '81d0110769b8e3102917ad4600e0ba17'
-    '87e0447d69f396eb755c3a8629a9d8d9'
-)
+install=$pkgname.install
+source=("http://github.com/drush-ops/$pkgname/archive/$pkgver.tar.gz")
+md5sums=('930e168a15aaa58397f27c13e8157c01')
 
 prepare() {
     composer install --prefer-source --no-interaction --working-dir "${pkgname}-${pkgver}"
