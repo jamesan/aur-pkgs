@@ -1,39 +1,45 @@
-# Maintainer: mickael9 <mickael9 at gmail dot com>
+# Maintainer: James An <james@jamesan.ca>
+# Contributor: mickael9 <mickael9 at gmail dot com>
 
-pkgname=pam_usb-git
-pkgver=20120515
+_pkgname=pam_usb
+pkgname="$_pkgname-git"
+pkgver=0.5.0.r25.g6a30dff
 pkgrel=1
-pkgdesc="PAM modules that enables either two-factor or password-less authentication using an USB storage device (such as an USB flash memory stick)"
-url="http://www.pamusb.org/"
-license=("GPL")
-depends=(libxml2 pam pmount udisks dbus-python pygobject)
+pkgdesc='PAM modules that enables either two-factor or password-less authentication using an USB storage device (such as an USB flash memory stick)'
 arch=('i686' 'x86_64')
+url="http://www.pamusb.org"
+license=('GPL')
+depends=(dbus-python libxml2 pam pmount pygobject udisks)
+makedepends=('git')
 backup=('etc/pamusb.conf')
-provides=(pam_usb)
-conflicts=(pam_usb)
+provides=("$_pkgname=$pkgver")
+conflicts=("$_pkgname")
+source=("$_pkgname"::"git+https://github.com/aluzzardi/$_pkgname.git")
+md5sums=('SKIP')
 
-_gitroot=https://github.com/aluzzardi/pam_usb.git
-_gitname=pam_usb
+pkgver() {
+    cd "$_pkgname"
+    (
+        set -o pipefail
+        git describe --long --tag | sed -r 's/([^-]*-g)/r\1/;s/-/./g' ||
+        printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+    )
+}
+
+prepare() {
+    cd "$_pkgname"
+
+    sed -i s/python/python2/ tools/*
+}
 
 build() {
-    cd "$srcdir"
-    msg "Connecting to GIT server...."
+    cd "$_pkgname"
 
-    if [[ -d "$_gitname" ]]; then
-    cd "$_gitname" && git pull origin
-    msg "The local files are updated."
-    else
-    git clone "$_gitroot" "$_gitname"
-    fi
+    make
+}
 
-    msg "GIT checkout done or server timeout"
-    msg "Starting build..."
+package() {
+    cd "$_pkgname"
 
-    rm -rf "$srcdir/$_gitname-build"
-    git clone "$srcdir/$_gitname" "$srcdir/$_gitname-build"
-    cd "$srcdir/$_gitname-build"
-
-    make DESTDIR="$pkgdir" PAM_USB_DEST="$pkgdir/usr/lib/security" install
-
-    sed -i 1s/python/python2/ "$pkgdir/usr/bin/pamusb-"{agent,conf}
+    make DESTDIR="$pkgdir" LIBDIR=usr/lib install
 }
