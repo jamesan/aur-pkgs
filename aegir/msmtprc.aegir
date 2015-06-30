@@ -1,11 +1,6 @@
-defaults
-auth            on
-tls             on
-tls_trust_file  /etc/ssl/certs/ca-certificates.crt
+account mailcatcher
+host localhost
+port 25
+auto_from on
 
-account         default
-host            smtp.gmail.com
-port            587
-from            address@gmail.com
-user            address@gmail.com
-password        yourpassword
+account default: mailcatcher
