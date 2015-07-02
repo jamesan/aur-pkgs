@@ -1,0 +1,15 @@
+[submodule "aegir"]
+	path = aegir
+	url = ssh+git://aur@aur4.archlinux.org/aegir.git
+[submodule "aegir-hostmaster"]
+	path = aegir-hostmaster
+	url = ssh+git://aur@aur4.archlinux.org/aegir-hostmaster.git
+[submodule "aegir-provision"]
+	path = aegir-provision
+	url = ssh+git://aur@aur4.archlinux.org/aegir-provision.git
+[submodule "aws-cli"]
+	path = aws-cli
+	url = ssh+git://aur@aur4.archlinux.org/aws-cli.git
+[submodule "ruby-mailcatcher"]
+	path = ruby-mailcatcher
+	url = ssh+git://aur@aur4.archlinux.org/ruby-mailcatcher.git
