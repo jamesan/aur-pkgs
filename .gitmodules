@@ -13,3 +13,6 @@
 [submodule "ruby-mailcatcher"]
 	path = ruby-mailcatcher
 	url = ssh+git://aur@aur4.archlinux.org/ruby-mailcatcher.git
+[submodule "macfanctld"]
+	path = macfanctld
+	url = ssh+git://aur@aur4.archlinux.org/macfanctld.git
