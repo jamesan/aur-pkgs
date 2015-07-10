@@ -16,3 +16,6 @@
 [submodule "macfanctld"]
 	path = macfanctld
 	url = ssh+git://aur@aur4.archlinux.org/macfanctld.git
+[submodule "ruby-skinny"]
+	path = ruby-skinny
+	url = ssh+git://aur@aur4.archlinux.org/ruby-skinny.git
