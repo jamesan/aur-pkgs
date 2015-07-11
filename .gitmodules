@@ -19,3 +19,9 @@
 [submodule "ruby-skinny"]
 	path = ruby-skinny
 	url = ssh+git://aur@aur4.archlinux.org/ruby-skinny.git
+[submodule "solr5"]
+	path = solr5
+	url = ssh+git://aur@aur4.archlinux.org/solr5.git
+[submodule "solr-conf-drupal"]
+	path = solr-conf-drupal
+	url = ssh+git://aur@aur4.archlinux.org/solr-conf-drupal.git
