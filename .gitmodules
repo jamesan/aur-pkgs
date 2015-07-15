@@ -31,3 +31,6 @@
 [submodule "pear-channel-phpseclib"]
 	path = pear-channel-phpseclib
 	url = ssh+git://aur@aur4.archlinux.org/pear-channel-phpseclib.git
+[submodule "pear-channel-pear2"]
+	path = pear-channel-pear2
+	url = ssh+git://aur@aur4.archlinux.org/pear-channel-pear2.git
