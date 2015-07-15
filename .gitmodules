@@ -25,3 +25,9 @@
 [submodule "solr-conf-drupal"]
 	path = solr-conf-drupal
 	url = ssh+git://aur@aur4.archlinux.org/solr-conf-drupal.git
+[submodule "pear-phpseclib"]
+	path = pear-phpseclib
+	url = ssh+git://aur@aur4.archlinux.org/pear-phpseclib.git
+[submodule "pear-channel-phpseclib"]
+	path = pear-channel-phpseclib
+	url = ssh+git://aur@aur4.archlinux.org/pear-channel-phpseclib.git
