@@ -1,36 +1,39 @@
 [submodule "aegir"]
-	path = aegir
-	url = ssh+git://aur@aur4.archlinux.org/aegir.git
+  path = aegir
+  url = ssh+git://aur@aur.archlinux.org/aegir.git
 [submodule "aegir-hostmaster"]
-	path = aegir-hostmaster
-	url = ssh+git://aur@aur4.archlinux.org/aegir-hostmaster.git
+  path = aegir-hostmaster
+  url = ssh+git://aur@aur.archlinux.org/aegir-hostmaster.git
 [submodule "aegir-provision"]
-	path = aegir-provision
-	url = ssh+git://aur@aur4.archlinux.org/aegir-provision.git
+  path = aegir-provision
+  url = ssh+git://aur@aur.archlinux.org/aegir-provision.git
 [submodule "aws-cli"]
-	path = aws-cli
-	url = ssh+git://aur@aur4.archlinux.org/aws-cli.git
+  path = aws-cli
+  url = ssh+git://aur@aur.archlinux.org/aws-cli.git
 [submodule "ruby-mailcatcher"]
-	path = ruby-mailcatcher
-	url = ssh+git://aur@aur4.archlinux.org/ruby-mailcatcher.git
+  path = ruby-mailcatcher
+  url = ssh+git://aur@aur.archlinux.org/ruby-mailcatcher.git
 [submodule "macfanctld"]
-	path = macfanctld
-	url = ssh+git://aur@aur4.archlinux.org/macfanctld.git
+  path = macfanctld
+  url = ssh+git://aur@aur.archlinux.org/macfanctld.git
 [submodule "ruby-skinny"]
-	path = ruby-skinny
-	url = ssh+git://aur@aur4.archlinux.org/ruby-skinny.git
+  path = ruby-skinny
+  url = ssh+git://aur@aur.archlinux.org/ruby-skinny.git
 [submodule "solr5"]
-	path = solr5
-	url = ssh+git://aur@aur4.archlinux.org/solr5.git
+  path = solr5
+  url = ssh+git://aur@aur.archlinux.org/solr5.git
 [submodule "solr-conf-drupal"]
-	path = solr-conf-drupal
-	url = ssh+git://aur@aur4.archlinux.org/solr-conf-drupal.git
+  path = solr-conf-drupal
+  url = ssh+git://aur@aur.archlinux.org/solr-conf-drupal.git
 [submodule "pear-phpseclib"]
-	path = pear-phpseclib
-	url = ssh+git://aur@aur4.archlinux.org/pear-phpseclib.git
+  path = pear-phpseclib
+  url = ssh+git://aur@aur.archlinux.org/pear-phpseclib.git
 [submodule "pear-channel-phpseclib"]
-	path = pear-channel-phpseclib
-	url = ssh+git://aur@aur4.archlinux.org/pear-channel-phpseclib.git
+  path = pear-channel-phpseclib
+  url = ssh+git://aur@aur.archlinux.org/pear-channel-phpseclib.git
 [submodule "pear-channel-pear2"]
-	path = pear-channel-pear2
-	url = ssh+git://aur@aur4.archlinux.org/pear-channel-pear2.git
+  path = pear-channel-pear2
+  url = ssh+git://aur@aur.archlinux.org/pear-channel-pear2.git
+[submodule "ruby-tuple"]
+	path = ruby-tuple
+	url = ssh+git://aur@aur.archlinux.org/ruby-tuple.git
