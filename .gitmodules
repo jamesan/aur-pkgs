@@ -37,3 +37,6 @@
 [submodule "ruby-tuple"]
 	path = ruby-tuple
 	url = ssh+git://aur@aur.archlinux.org/ruby-tuple.git
+[submodule "ruby-bdb"]
+	path = ruby-bdb
+	url = ssh+git://aur@aur.archlinux.org/ruby-bdb.git
