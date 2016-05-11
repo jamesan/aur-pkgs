@@ -181,3 +181,6 @@
 [submodule "systemd-resolved-public-dns"]
 	path = systemd-resolved-public-dns
 	url = ssh+git://aur@aur4.archlinux.org/systemd-resolved-public-dns.git
+[submodule "tomcat8-solr"]
+	path = tomcat8-solr
+	url = ssh+git://aur@aur4.archlinux.org/tomcat8-solr.git
