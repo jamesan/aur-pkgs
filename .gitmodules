@@ -151,3 +151,6 @@
 [submodule "python-bencodepy"]
 	path = python-bencodepy
 	url = ssh+git://aur@aur4.archlinux.org/python-bencodepy.git
+[submodule "python2-creepy-git"]
+	path = python2-creepy-git
+	url = ssh+git://aur@aur4.archlinux.org/python2-creepy-git.git
