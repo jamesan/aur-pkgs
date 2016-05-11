@@ -142,3 +142,6 @@
 [submodule "pnm2ppa"]
 	path = pnm2ppa
 	url = ssh+git://aur@aur4.archlinux.org/pnm2ppa.git
+[submodule "podsleuth"]
+	path = podsleuth
+	url = ssh+git://aur@aur4.archlinux.org/podsleuth.git
