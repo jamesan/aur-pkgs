@@ -103,3 +103,6 @@
 [submodule "jfbchat"]
 	path = jfbchat
 	url = ssh+git://aur@aur4.archlinux.org/jfbchat.git
+[submodule "kettu-git"]
+	path = kettu-git
+	url = ssh+git://aur@aur4.archlinux.org/kettu-git.git
