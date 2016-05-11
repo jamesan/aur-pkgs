@@ -52,3 +52,6 @@
 [submodule "bash-utils-git"]
 	path = bash-utils-git
 	url = ssh+git://aur@aur4.archlinux.org/bash-utils-git.git
+[submodule "busybox-static"]
+	path = busybox-static
+	url = ssh+git://aur@aur4.archlinux.org/busybox-static.git
