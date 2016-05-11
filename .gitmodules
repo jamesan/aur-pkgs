@@ -193,3 +193,6 @@
 [submodule "wpa_supplicant-wext-systemd"]
 	path = wpa_supplicant-wext-systemd
 	url = ssh+git://aur@aur4.archlinux.org/wpa_supplicant-wext-systemd.git
+[submodule "xfce4-remmina-plugin"]
+	path = xfce4-remmina-plugin
+	url = ssh+git://aur@aur4.archlinux.org/xfce4-remmina-plugin.git
