@@ -139,3 +139,6 @@
 [submodule "pmsencoder-bin"]
 	path = pmsencoder-bin
 	url = ssh+git://aur@aur4.archlinux.org/pmsencoder-bin.git
+[submodule "pnm2ppa"]
+	path = pnm2ppa
+	url = ssh+git://aur@aur4.archlinux.org/pnm2ppa.git
