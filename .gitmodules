@@ -115,3 +115,6 @@
 [submodule "makro"]
 	path = makro
 	url = ssh+git://aur@aur4.archlinux.org/makro.git
+[submodule "networkmanager-ifupdown"]
+	path = networkmanager-ifupdown
+	url = ssh+git://aur@aur4.archlinux.org/networkmanager-ifupdown.git
