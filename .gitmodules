@@ -40,3 +40,6 @@
 [submodule "ruby-bdb"]
 	path = ruby-bdb
 	url = ssh+git://aur@aur.archlinux.org/ruby-bdb.git
+[submodule "aegir-provision-tasks-extra"]
+	path = aegir-provision-tasks-extra
+	url = ssh+git://aur@aur4.archlinux.org/aegir-provision-tasks-extra.git
