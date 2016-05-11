@@ -79,3 +79,6 @@
 [submodule "fbcmd-git"]
 	path = fbcmd-git
 	url = ssh+git://aur@aur4.archlinux.org/fbcmd-git.git
+[submodule "geany-astyle"]
+	path = geany-astyle
+	url = ssh+git://aur@aur4.archlinux.org/geany-astyle.git
