@@ -187,3 +187,6 @@
 [submodule "totp-cli"]
 	path = totp-cli
 	url = ssh+git://aur@aur4.archlinux.org/totp-cli.git
+[submodule "webui-aria2-git"]
+	path = webui-aria2-git
+	url = ssh+git://aur@aur4.archlinux.org/webui-aria2-git.git
