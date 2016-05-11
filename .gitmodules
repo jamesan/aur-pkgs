@@ -61,3 +61,6 @@
 [submodule "code2html"]
 	path = code2html
 	url = ssh+git://aur@aur4.archlinux.org/code2html.git
+[submodule "drupal-l10n"]
+	path = drupal-l10n
+	url = ssh+git://aur@aur4.archlinux.org/drupal-l10n.git
