@@ -175,3 +175,6 @@
 [submodule "stdoutisatty"]
 	path = stdoutisatty
 	url = ssh+git://aur@aur4.archlinux.org/stdoutisatty.git
+[submodule "subbrute-git"]
+	path = subbrute-git
+	url = ssh+git://aur@aur4.archlinux.org/subbrute-git.git
