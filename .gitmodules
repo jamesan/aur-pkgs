@@ -88,3 +88,6 @@
 [submodule "geany-snippets"]
 	path = geany-snippets
 	url = ssh+git://aur@aur4.archlinux.org/geany-snippets.git
+[submodule "geeknote-git"]
+	path = geeknote-git
+	url = ssh+git://aur@aur4.archlinux.org/geeknote-git.git
