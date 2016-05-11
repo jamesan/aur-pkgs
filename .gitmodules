@@ -124,3 +124,6 @@
 [submodule "perl-xml-xsh"]
 	path = perl-xml-xsh
 	url = ssh+git://aur@aur4.archlinux.org/perl-xml-xsh.git
+[submodule "philesight"]
+	path = philesight
+	url = ssh+git://aur@aur4.archlinux.org/philesight.git
