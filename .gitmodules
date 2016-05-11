@@ -94,3 +94,6 @@
 [submodule "google-apps-manager"]
 	path = google-apps-manager
 	url = ssh+git://aur@aur4.archlinux.org/google-apps-manager.git
+[submodule "graphicsmagick-imagemagick-compat"]
+	path = graphicsmagick-imagemagick-compat
+	url = ssh+git://aur@aur4.archlinux.org/graphicsmagick-imagemagick-compat.git
