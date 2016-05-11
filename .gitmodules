@@ -97,3 +97,6 @@
 [submodule "graphicsmagick-imagemagick-compat"]
 	path = graphicsmagick-imagemagick-compat
 	url = ssh+git://aur@aur4.archlinux.org/graphicsmagick-imagemagick-compat.git
+[submodule "jauth-git"]
+	path = jauth-git
+	url = ssh+git://aur@aur4.archlinux.org/jauth-git.git
