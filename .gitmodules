@@ -106,3 +106,6 @@
 [submodule "kettu-git"]
 	path = kettu-git
 	url = ssh+git://aur@aur4.archlinux.org/kettu-git.git
+[submodule "libtomcrypt"]
+	path = libtomcrypt
+	url = ssh+git://aur@aur4.archlinux.org/libtomcrypt.git
