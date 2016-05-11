@@ -166,3 +166,6 @@
 [submodule "slimrat"]
 	path = slimrat
 	url = ssh+git://aur@aur4.archlinux.org/slimrat.git
+[submodule "soundcli"]
+	path = soundcli
+	url = ssh+git://aur@aur4.archlinux.org/soundcli.git
