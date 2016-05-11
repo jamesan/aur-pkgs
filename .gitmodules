@@ -58,3 +58,6 @@
 [submodule "ciphershed-nogui-git"]
 	path = ciphershed-nogui-git
 	url = ssh+git://aur@aur4.archlinux.org/ciphershed-nogui-git.git
+[submodule "code2html"]
+	path = code2html
+	url = ssh+git://aur@aur4.archlinux.org/code2html.git
