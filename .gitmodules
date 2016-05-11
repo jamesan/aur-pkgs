@@ -157,3 +157,6 @@
 [submodule "python2-websocket-client-pebble"]
 	path = python2-websocket-client-pebble
 	url = ssh+git://aur@aur4.archlinux.org/python2-websocket-client-pebble.git
+[submodule "ruby-gstreamer"]
+	path = ruby-gstreamer
+	url = ssh+git://aur@aur4.archlinux.org/ruby-gstreamer.git
