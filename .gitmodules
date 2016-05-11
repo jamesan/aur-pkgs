@@ -100,3 +100,6 @@
 [submodule "jauth-git"]
 	path = jauth-git
 	url = ssh+git://aur@aur4.archlinux.org/jauth-git.git
+[submodule "jfbchat"]
+	path = jfbchat
+	url = ssh+git://aur@aur4.archlinux.org/jfbchat.git
