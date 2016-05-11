@@ -190,3 +190,6 @@
 [submodule "webui-aria2-git"]
 	path = webui-aria2-git
 	url = ssh+git://aur@aur4.archlinux.org/webui-aria2-git.git
+[submodule "wpa_supplicant-wext-systemd"]
+	path = wpa_supplicant-wext-systemd
+	url = ssh+git://aur@aur4.archlinux.org/wpa_supplicant-wext-systemd.git
