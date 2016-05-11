@@ -46,3 +46,6 @@
 [submodule "autorandr-git"]
 	path = autorandr-git
 	url = ssh+git://aur@aur4.archlinux.org/autorandr-git.git
+[submodule "auto-xflux"]
+	path = auto-xflux
+	url = ssh+git://aur@aur4.archlinux.org/auto-xflux.git
