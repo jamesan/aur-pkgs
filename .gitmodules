@@ -64,3 +64,6 @@
 [submodule "drupal-l10n"]
 	path = drupal-l10n
 	url = ssh+git://aur@aur4.archlinux.org/drupal-l10n.git
+[submodule "drupal8-git"]
+	path = drupal8-git
+	url = ssh+git://aur@aur4.archlinux.org/drupal8-git.git
