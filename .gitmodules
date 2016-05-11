@@ -85,3 +85,6 @@
 [submodule "geany-openscad"]
 	path = geany-openscad
 	url = ssh+git://aur@aur4.archlinux.org/geany-openscad.git
+[submodule "geany-snippets"]
+	path = geany-snippets
+	url = ssh+git://aur@aur4.archlinux.org/geany-snippets.git
