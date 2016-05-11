@@ -169,3 +169,6 @@
 [submodule "soundcli"]
 	path = soundcli
 	url = ssh+git://aur@aur4.archlinux.org/soundcli.git
+[submodule "speedtest-cli-git"]
+	path = speedtest-cli-git
+	url = ssh+git://aur@aur4.archlinux.org/speedtest-cli-git.git
