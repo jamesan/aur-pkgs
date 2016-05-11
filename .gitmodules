@@ -73,3 +73,6 @@
 [submodule "evolution-on-git"]
 	path = evolution-on-git
 	url = ssh+git://aur@aur4.archlinux.org/evolution-on-git.git
+[submodule "exfat-dkms-git"]
+	path = exfat-dkms-git
+	url = ssh+git://aur@aur4.archlinux.org/exfat-dkms-git.git
