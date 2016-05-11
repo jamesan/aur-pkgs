@@ -49,3 +49,6 @@
 [submodule "auto-xflux"]
 	path = auto-xflux
 	url = ssh+git://aur@aur4.archlinux.org/auto-xflux.git
+[submodule "bash-utils-git"]
+	path = bash-utils-git
+	url = ssh+git://aur@aur4.archlinux.org/bash-utils-git.git
