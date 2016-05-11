@@ -91,3 +91,6 @@
 [submodule "geeknote-git"]
 	path = geeknote-git
 	url = ssh+git://aur@aur4.archlinux.org/geeknote-git.git
+[submodule "google-apps-manager"]
+	path = google-apps-manager
+	url = ssh+git://aur@aur4.archlinux.org/google-apps-manager.git
