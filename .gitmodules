@@ -130,3 +130,6 @@
 [submodule "php-behat"]
 	path = php-behat
 	url = ssh+git://aur@aur4.archlinux.org/php-behat.git
+[submodule "pmd"]
+	path = pmd
+	url = ssh+git://aur@aur4.archlinux.org/pmd.git
