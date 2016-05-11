@@ -133,3 +133,6 @@
 [submodule "pmd"]
 	path = pmd
 	url = ssh+git://aur@aur4.archlinux.org/pmd.git
+[submodule "pmd-bin"]
+	path = pmd-bin
+	url = ssh+git://aur@aur4.archlinux.org/pmd-bin.git
