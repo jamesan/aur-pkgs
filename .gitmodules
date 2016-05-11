@@ -70,3 +70,6 @@
 [submodule "drush"]
 	path = drush
 	url = ssh+git://aur@aur4.archlinux.org/drush.git
+[submodule "evolution-on-git"]
+	path = evolution-on-git
+	url = ssh+git://aur@aur4.archlinux.org/evolution-on-git.git
