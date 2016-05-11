@@ -145,3 +145,6 @@
 [submodule "podsleuth"]
 	path = podsleuth
 	url = ssh+git://aur@aur4.archlinux.org/podsleuth.git
+[submodule "pommed-jalaziz"]
+	path = pommed-jalaziz
+	url = ssh+git://aur@aur4.archlinux.org/pommed-jalaziz.git
