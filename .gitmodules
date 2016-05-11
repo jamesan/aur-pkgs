@@ -160,3 +160,6 @@
 [submodule "ruby-gstreamer"]
 	path = ruby-gstreamer
 	url = ssh+git://aur@aur4.archlinux.org/ruby-gstreamer.git
+[submodule "simian"]
+	path = simian
+	url = ssh+git://aur@aur4.archlinux.org/simian.git
