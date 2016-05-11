@@ -43,3 +43,6 @@
 [submodule "aegir-provision-tasks-extra"]
 	path = aegir-provision-tasks-extra
 	url = ssh+git://aur@aur4.archlinux.org/aegir-provision-tasks-extra.git
+[submodule "autorandr-git"]
+	path = autorandr-git
+	url = ssh+git://aur@aur4.archlinux.org/autorandr-git.git
