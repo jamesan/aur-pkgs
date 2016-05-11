@@ -172,3 +172,6 @@
 [submodule "speedtest-cli-git"]
 	path = speedtest-cli-git
 	url = ssh+git://aur@aur4.archlinux.org/speedtest-cli-git.git
+[submodule "stdoutisatty"]
+	path = stdoutisatty
+	url = ssh+git://aur@aur4.archlinux.org/stdoutisatty.git
