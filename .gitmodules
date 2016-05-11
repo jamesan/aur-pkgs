@@ -136,3 +136,6 @@
 [submodule "pmd-bin"]
 	path = pmd-bin
 	url = ssh+git://aur@aur4.archlinux.org/pmd-bin.git
+[submodule "pmsencoder-bin"]
+	path = pmsencoder-bin
+	url = ssh+git://aur@aur4.archlinux.org/pmsencoder-bin.git
