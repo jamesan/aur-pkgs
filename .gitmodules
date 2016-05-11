@@ -127,3 +127,6 @@
 [submodule "philesight"]
 	path = philesight
 	url = ssh+git://aur@aur4.archlinux.org/philesight.git
+[submodule "php-behat"]
+	path = php-behat
+	url = ssh+git://aur@aur4.archlinux.org/php-behat.git
