@@ -76,3 +76,6 @@
 [submodule "exfat-dkms-git"]
 	path = exfat-dkms-git
 	url = ssh+git://aur@aur4.archlinux.org/exfat-dkms-git.git
+[submodule "fbcmd-git"]
+	path = fbcmd-git
+	url = ssh+git://aur@aur4.archlinux.org/fbcmd-git.git
