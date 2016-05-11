@@ -163,3 +163,6 @@
 [submodule "simian"]
 	path = simian
 	url = ssh+git://aur@aur4.archlinux.org/simian.git
+[submodule "slimrat"]
+	path = slimrat
+	url = ssh+git://aur@aur4.archlinux.org/slimrat.git
