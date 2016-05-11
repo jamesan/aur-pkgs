@@ -148,3 +148,6 @@
 [submodule "pommed-jalaziz"]
 	path = pommed-jalaziz
 	url = ssh+git://aur@aur4.archlinux.org/pommed-jalaziz.git
+[submodule "python-bencodepy"]
+	path = python-bencodepy
+	url = ssh+git://aur@aur4.archlinux.org/python-bencodepy.git
