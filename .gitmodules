@@ -67,3 +67,6 @@
 [submodule "drupal8-git"]
 	path = drupal8-git
 	url = ssh+git://aur@aur4.archlinux.org/drupal8-git.git
+[submodule "drush"]
+	path = drush
+	url = ssh+git://aur@aur4.archlinux.org/drush.git
