@@ -112,3 +112,6 @@
 [submodule "libxrandr-git"]
 	path = libxrandr-git
 	url = ssh+git://aur@aur4.archlinux.org/libxrandr-git.git
+[submodule "makro"]
+	path = makro
+	url = ssh+git://aur@aur4.archlinux.org/makro.git
