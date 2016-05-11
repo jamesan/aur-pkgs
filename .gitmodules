@@ -118,3 +118,6 @@
 [submodule "networkmanager-ifupdown"]
 	path = networkmanager-ifupdown
 	url = ssh+git://aur@aur4.archlinux.org/networkmanager-ifupdown.git
+[submodule "pecl-timezonedb"]
+	path = pecl-timezonedb
+	url = ssh+git://aur@aur4.archlinux.org/pecl-timezonedb.git
