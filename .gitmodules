@@ -55,3 +55,6 @@
 [submodule "busybox-static"]
 	path = busybox-static
 	url = ssh+git://aur@aur4.archlinux.org/busybox-static.git
+[submodule "ciphershed-nogui-git"]
+	path = ciphershed-nogui-git
+	url = ssh+git://aur@aur4.archlinux.org/ciphershed-nogui-git.git
