@@ -109,3 +109,6 @@
 [submodule "libtomcrypt"]
 	path = libtomcrypt
 	url = ssh+git://aur@aur4.archlinux.org/libtomcrypt.git
+[submodule "libxrandr-git"]
+	path = libxrandr-git
+	url = ssh+git://aur@aur4.archlinux.org/libxrandr-git.git
