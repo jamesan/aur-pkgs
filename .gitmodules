@@ -196,3 +196,6 @@
 [submodule "xfce4-remmina-plugin"]
 	path = xfce4-remmina-plugin
 	url = ssh+git://aur@aur4.archlinux.org/xfce4-remmina-plugin.git
+[submodule "xorg-xrandr-git"]
+	path = xorg-xrandr-git
+	url = ssh+git://aur@aur4.archlinux.org/xorg-xrandr-git.git
