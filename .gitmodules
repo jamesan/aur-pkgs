@@ -253,3 +253,6 @@
 [submodule "solr4-war"]
 	path = solr4-war
 	url = ssh+git://aur@aur.archlinux.org/solr4-war.git
+[submodule "solr5-zip"]
+	path = solr5-zip
+	url = ssh+git://aur@aur.archlinux.org/solr5-zip.git
