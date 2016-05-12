@@ -208,3 +208,6 @@
 [submodule "leapcast-git"]
 	path = leapcast-git
 	url = ssh+git://aur@aur.archlinux.org/leapcast-git.git
+[submodule "libde265"]
+	path = libde265
+	url = ssh+git://aur@aur.archlinux.org/libde265.git
