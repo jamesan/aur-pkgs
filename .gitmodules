@@ -205,3 +205,6 @@
 [submodule "kismet-plugins-restricted"]
 	path = kismet-plugins-restricted
 	url = ssh+git://aur@aur.archlinux.org/kismet-plugins-restricted.git
+[submodule "leapcast-git"]
+	path = leapcast-git
+	url = ssh+git://aur@aur.archlinux.org/leapcast-git.git
