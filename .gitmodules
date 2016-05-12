@@ -274,3 +274,6 @@
 [submodule "official/cloudfusion-git"]
 	path = official/cloudfusion-git
 	url = ssh+git://aur@aur.archlinux.org/cloudfusion-git.git
+[submodule "official/clover-efi"]
+	path = official/clover-efi
+	url = ssh+git://aur@aur.archlinux.org/clover-efi.git
