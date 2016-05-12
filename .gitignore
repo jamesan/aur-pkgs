@@ -8,10 +8,6 @@
 *.log.*
 *.sig
 
-# AUR metadata
-.AURINFO
-.SRCINFO
-
 # makepkg working folders
 pkg
 src
@@ -28,4 +24,4 @@ src
 *.html
 
 # Ignore package source folders
-*/*/*
+*/*/*/*
