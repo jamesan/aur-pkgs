@@ -250,3 +250,6 @@
 [submodule "solr3-war"]
 	path = solr3-war
 	url = ssh+git://aur@aur.archlinux.org/solr3-war.git
+[submodule "solr4-war"]
+	path = solr4-war
+	url = ssh+git://aur@aur.archlinux.org/solr4-war.git
