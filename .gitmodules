@@ -271,3 +271,6 @@
 [submodule "official/apple_set_os"]
 	path = official/apple_set_os
 	url = ssh+git://aur@aur.archlinux.org/apple_set_os.git
+[submodule "official/cloudfusion-git"]
+	path = official/cloudfusion-git
+	url = ssh+git://aur@aur.archlinux.org/cloudfusion-git.git
