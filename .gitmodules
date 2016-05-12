@@ -229,3 +229,6 @@
 [submodule "pimpmylog-git"]
 	path = pimpmylog-git
 	url = ssh+git://aur@aur.archlinux.org/pimpmylog-git.git
+[submodule "python-gntp"]
+	path = python-gntp
+	url = ssh+git://aur@aur.archlinux.org/python-gntp.git
