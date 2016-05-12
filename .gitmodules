@@ -262,3 +262,6 @@
 [submodule "xtables-addons-dkms"]
 	path = xtables-addons-dkms
 	url = ssh+git://aur@aur.archlinux.org/xtables-addons-dkms.git
+[submodule "zinnia-git"]
+	path = zinnia-git
+	url = ssh+git://aur@aur.archlinux.org/zinnia-git.git
