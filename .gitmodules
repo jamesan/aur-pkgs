@@ -238,3 +238,6 @@
 [submodule "python-pushnotify"]
 	path = python-pushnotify
 	url = ssh+git://aur@aur.archlinux.org/python-pushnotify.git
+[submodule "python-pyjslint"]
+	path = python-pyjslint
+	url = ssh+git://aur@aur.archlinux.org/python-pyjslint.git
