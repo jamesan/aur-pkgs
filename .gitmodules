@@ -244,3 +244,6 @@
 [submodule "refind-efi-git"]
 	path = refind-efi-git
 	url = ssh+git://aur@aur.archlinux.org/refind-efi-git.git
+[submodule "solr1.4-war"]
+	path = solr1.4-war
+	url = ssh+git://aur@aur.archlinux.org/solr1.4-war.git
