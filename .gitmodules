@@ -223,3 +223,6 @@
 [submodule "php-cairo-git"]
 	path = php-cairo-git
 	url = ssh+git://aur@aur.archlinux.org/php-cairo-git.git
+[submodule "php-gtk-git"]
+	path = php-gtk-git
+	url = ssh+git://aur@aur.archlinux.org/php-gtk-git.git
