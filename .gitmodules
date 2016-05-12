@@ -247,3 +247,6 @@
 [submodule "solr1.4-war"]
 	path = solr1.4-war
 	url = ssh+git://aur@aur.archlinux.org/solr1.4-war.git
+[submodule "solr3-war"]
+	path = solr3-war
+	url = ssh+git://aur@aur.archlinux.org/solr3-war.git
