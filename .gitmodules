@@ -235,3 +235,6 @@
 [submodule "python-hghooks"]
 	path = python-hghooks
 	url = ssh+git://aur@aur.archlinux.org/python-hghooks.git
+[submodule "python-pushnotify"]
+	path = python-pushnotify
+	url = ssh+git://aur@aur.archlinux.org/python-pushnotify.git
