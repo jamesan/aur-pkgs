@@ -232,3 +232,6 @@
 [submodule "python-gntp"]
 	path = python-gntp
 	url = ssh+git://aur@aur.archlinux.org/python-gntp.git
+[submodule "python-hghooks"]
+	path = python-hghooks
+	url = ssh+git://aur@aur.archlinux.org/python-hghooks.git
