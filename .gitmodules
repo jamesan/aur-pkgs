@@ -214,3 +214,6 @@
 [submodule "libfvde-git"]
 	path = libfvde-git
 	url = ssh+git://aur@aur.archlinux.org/libfvde-git.git
+[submodule "nodejs-profitbricks-cli"]
+	path = nodejs-profitbricks-cli
+	url = ssh+git://aur@aur.archlinux.org/nodejs-profitbricks-cli.git
