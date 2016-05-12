@@ -277,3 +277,6 @@
 [submodule "official/clover-efi"]
 	path = official/clover-efi
 	url = ssh+git://aur@aur.archlinux.org/clover-efi.git
+[submodule "official/db6.2"]
+	path = official/db6.2
+	url = ssh+git://aur@aur.archlinux.org/db6.2.git
