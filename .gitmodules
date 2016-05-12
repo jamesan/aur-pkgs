@@ -20,7 +20,7 @@
 	path = official/ruby-skinny
 	url = ssh+git://aur@aur.archlinux.org/ruby-skinny.git
 [submodule "solr5"]
-	path = solr5
+	path = wip/solr5
 	url = ssh+git://aur@aur.archlinux.org/solr5.git
 [submodule "solr-conf-drupal"]
 	path = official/solr-conf-drupal
