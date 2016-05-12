@@ -259,3 +259,6 @@
 [submodule "solr-undertow"]
 	path = solr-undertow
 	url = ssh+git://aur@aur.archlinux.org/solr-undertow.git
+[submodule "xtables-addons-dkms"]
+	path = xtables-addons-dkms
+	url = ssh+git://aur@aur.archlinux.org/xtables-addons-dkms.git
