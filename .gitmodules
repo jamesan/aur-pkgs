@@ -226,3 +226,6 @@
 [submodule "php-gtk-git"]
 	path = php-gtk-git
 	url = ssh+git://aur@aur.archlinux.org/php-gtk-git.git
+[submodule "pimpmylog-git"]
+	path = pimpmylog-git
+	url = ssh+git://aur@aur.archlinux.org/pimpmylog-git.git
