@@ -256,3 +256,6 @@
 [submodule "solr5-zip"]
 	path = solr5-zip
 	url = ssh+git://aur@aur.archlinux.org/solr5-zip.git
+[submodule "solr-undertow"]
+	path = solr-undertow
+	url = ssh+git://aur@aur.archlinux.org/solr-undertow.git
