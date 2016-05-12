@@ -241,3 +241,6 @@
 [submodule "python-pyjslint"]
 	path = python-pyjslint
 	url = ssh+git://aur@aur.archlinux.org/python-pyjslint.git
+[submodule "refind-efi-git"]
+	path = refind-efi-git
+	url = ssh+git://aur@aur.archlinux.org/refind-efi-git.git
