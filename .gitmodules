@@ -220,3 +220,6 @@
 [submodule "pbzx-stream-parser"]
 	path = pbzx-stream-parser
 	url = ssh+git://aur@aur.archlinux.org/pbzx-stream-parser.git
+[submodule "php-cairo-git"]
+	path = php-cairo-git
+	url = ssh+git://aur@aur.archlinux.org/php-cairo-git.git
