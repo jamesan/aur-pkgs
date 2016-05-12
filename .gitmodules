@@ -211,3 +211,6 @@
 [submodule "libde265"]
 	path = libde265
 	url = ssh+git://aur@aur.archlinux.org/libde265.git
+[submodule "libfvde-git"]
+	path = libfvde-git
+	url = ssh+git://aur@aur.archlinux.org/libfvde-git.git
