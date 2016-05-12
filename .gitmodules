@@ -199,3 +199,6 @@
 [submodule "xorg-xrandr-git"]
 	path = xorg-xrandr-git
 	url = ssh+git://aur@aur4.archlinux.org/xorg-xrandr-git.git
+[submodule "iloot-git"]
+	path = iloot-git
+	url = ssh+git://aur@aur.archlinux.org/iloot-git.git
