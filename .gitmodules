@@ -268,3 +268,6 @@
 [submodule "official/drush-git"]
 	path = official/drush-git
 	url = ssh+git://aur@aur.archlinux.org/drush-git.git
+[submodule "official/apple_set_os"]
+	path = official/apple_set_os
+	url = ssh+git://aur@aur.archlinux.org/apple_set_os.git
