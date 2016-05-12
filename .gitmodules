@@ -265,3 +265,6 @@
 [submodule "zinnia-git"]
 	path = official/zinnia-git
 	url = ssh+git://aur@aur.archlinux.org/zinnia-git.git
+[submodule "official/drush-git"]
+	path = official/drush-git
+	url = ssh+git://aur@aur.archlinux.org/drush-git.git
