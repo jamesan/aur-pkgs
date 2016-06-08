@@ -301,3 +301,6 @@
 [submodule "wip/ompl-git"]
 	path = wip/ompl-git
 	url = git@github.com:jamesan-unofficial-aur-pkgs/ompl-git.git
+[submodule "official/drush-extensions"]
+	path = official/drush-extensions
+	url = ssh+git://aur@aur.archlinux.org/drush-extensions.git
