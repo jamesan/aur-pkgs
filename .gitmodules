@@ -282,10 +282,10 @@
 	url = ssh+git://aur@aur.archlinux.org/db6.2.git
 [submodule "unofficial/darling-dmg-git"]
 	path = unofficial/darling-dmg-git
-	url = ssh+git@github.com:jamesan/darling-dmg-git.git
+	url = git@github.com:jamesan-unofficial-aur-pkgs/darling-dmg-git.git
 [submodule "unofficial/php-twig-git"]
 	path = unofficial/php-twig-git
-	url = ssh+git@github.com:jamesan-unofficial-aur-pkgs/php-twig-git.git
+	url = git@github.com:jamesan-unofficial-aur-pkgs/php-twig-git.git
 [submodule "wip/deluge-plugins"]
 	path = unofficial/deluge-plugins
 	url = ssh+git://aur@aur.archlinux.org/deluge-plugins.git
