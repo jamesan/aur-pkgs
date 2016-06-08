@@ -304,3 +304,6 @@
 [submodule "official/drush-extensions"]
 	path = official/drush-extensions
 	url = ssh+git://aur@aur.archlinux.org/drush-extensions.git
+[submodule "unofficial/rescuetime"]
+	path = unofficial/rescuetime
+	url = git@github.com:jamesan-unofficial-aur-pkgs/rescuetime.git
