@@ -307,3 +307,6 @@
 [submodule "unofficial/rescuetime"]
 	path = unofficial/rescuetime
 	url = git@github.com:jamesan-unofficial-aur-pkgs/rescuetime.git
+[submodule "official/php-datastructures-git"]
+	path = official/php-datastructures-git
+	url = ssh+git://aur@aur.archlinux.org/php-datastructures-git.git
