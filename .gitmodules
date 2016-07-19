@@ -310,3 +310,9 @@
 [submodule "official/php-datastructures-git"]
 	path = official/php-datastructures-git
 	url = ssh+git://aur@aur.archlinux.org/php-datastructures-git.git
+[submodule "unofficial/selfspy-git"]
+	path = unofficial/selfspy-git
+	url = git@github.com:jamesan-unofficial-aur-pkgs/selfspy-git.git
+[submodule "unofficial/cvsps2"]
+	path = unofficial/cvsps2
+	url = git@github.com:jamesan-unofficial-aur-pkgs/cvsps2.git
