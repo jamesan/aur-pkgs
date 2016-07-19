@@ -319,3 +319,6 @@
 [submodule "unofficial/gephi"]
 	path = unofficial/gephi
 	url = git@github.com:jamesan-unofficial-aur-pkgs/gephi.git
+[submodule "official/terminus"]
+	path = official/terminus
+	url = ssh+git://aur@aur.archlinux.org/terminus.git
