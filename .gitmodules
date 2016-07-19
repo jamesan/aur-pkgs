@@ -316,3 +316,6 @@
 [submodule "unofficial/cvsps2"]
 	path = unofficial/cvsps2
 	url = git@github.com:jamesan-unofficial-aur-pkgs/cvsps2.git
+[submodule "unofficial/gephi"]
+	path = unofficial/gephi
+	url = git@github.com:jamesan-unofficial-aur-pkgs/gephi.git
