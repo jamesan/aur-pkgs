@@ -322,3 +322,6 @@
 [submodule "official/terminus"]
 	path = official/terminus
 	url = ssh+git://aur@aur.archlinux.org/terminus.git
+[submodule "official/platformsh-cli-git"]
+	path = official/platformsh-cli-git
+	url = ssh+git://aur@aur.archlinux.org/platformsh-cli-git.git
