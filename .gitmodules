@@ -325,3 +325,6 @@
 [submodule "official/platformsh-cli-git"]
 	path = official/platformsh-cli-git
 	url = ssh+git://aur@aur.archlinux.org/platformsh-cli-git.git
+[submodule "official/drush-scaffolding"]
+	path = official/drush-scaffolding
+	url = ssh+git://aur@aur.archlinux.org/drush-scaffolding.git
