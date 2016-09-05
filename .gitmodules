@@ -1,0 +1,3 @@
+[submodule "jsonix-schema-compiler"]
+	path = jsonix-schema-compiler
+	url = ssh+git://aur@aur.archlinux.org/jsonix-schema-compiler.git
