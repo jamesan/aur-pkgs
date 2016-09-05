@@ -1,3 +1,9 @@
 [submodule "jsonix-schema-compiler"]
 	path = jsonix-schema-compiler
 	url = ssh+git://aur@aur.archlinux.org/jsonix-schema-compiler.git
+[submodule "nodejs-ajv"]
+	path = nodejs-ajv
+	url = ssh+git://aur@aur.archlinux.org/nodejs-ajv.git
+[submodule "nodejs-ajv-cli"]
+	path = nodejs-ajv-cli
+	url = ssh+git://aur@aur.archlinux.org/nodejs-ajv-cli.git
