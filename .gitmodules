@@ -1,333 +1,343 @@
 [submodule "aegir"]
-	path = official/aegir
-	url = ssh+git://aur@aur.archlinux.org/aegir.git
+  path = official/aegir
+  url = ssh+git://aur@aur.archlinux.org/aegir.git
 [submodule "aegir-hostmaster"]
-	path = official/aegir-hostmaster
-	url = ssh+git://aur@aur.archlinux.org/aegir-hostmaster.git
+  path = official/aegir-hostmaster
+  url = ssh+git://aur@aur.archlinux.org/aegir-hostmaster.git
 [submodule "aegir-provision"]
-	path = official/aegir-provision
-	url = ssh+git://aur@aur.archlinux.org/aegir-provision.git
+  path = official/aegir-provision
+  url = ssh+git://aur@aur.archlinux.org/aegir-provision.git
 [submodule "aws-cli"]
-	path = aws-cli
-	url = ssh+git://aur@aur.archlinux.org/aws-cli.git
+  path = aws-cli
+  url = ssh+git://aur@aur.archlinux.org/aws-cli.git
 [submodule "ruby-mailcatcher"]
-	path = official/ruby-mailcatcher
-	url = ssh+git://aur@aur.archlinux.org/ruby-mailcatcher.git
+  path = official/ruby-mailcatcher
+  url = ssh+git://aur@aur.archlinux.org/ruby-mailcatcher.git
 [submodule "macfanctld"]
-	path = official/macfanctld
-	url = ssh+git://aur@aur.archlinux.org/macfanctld.git
+  path = official/macfanctld
+  url = ssh+git://aur@aur.archlinux.org/macfanctld.git
 [submodule "ruby-skinny"]
-	path = official/ruby-skinny
-	url = ssh+git://aur@aur.archlinux.org/ruby-skinny.git
+  path = official/ruby-skinny
+  url = ssh+git://aur@aur.archlinux.org/ruby-skinny.git
 [submodule "solr5"]
-	path = wip/solr5
-	url = ssh+git://aur@aur.archlinux.org/solr5.git
+  path = wip/solr5
+  url = ssh+git://aur@aur.archlinux.org/solr5.git
 [submodule "solr-conf-drupal"]
-	path = official/solr-conf-drupal
-	url = ssh+git://aur@aur.archlinux.org/solr-conf-drupal.git
+  path = official/solr-conf-drupal
+  url = ssh+git://aur@aur.archlinux.org/solr-conf-drupal.git
 [submodule "pear-phpseclib"]
-	path = official/pear-phpseclib
-	url = ssh+git://aur@aur.archlinux.org/pear-phpseclib.git
+  path = official/pear-phpseclib
+  url = ssh+git://aur@aur.archlinux.org/pear-phpseclib.git
 [submodule "pear-channel-phpseclib"]
-	path = official/pear-channel-phpseclib
-	url = ssh+git://aur@aur.archlinux.org/pear-channel-phpseclib.git
+  path = official/pear-channel-phpseclib
+  url = ssh+git://aur@aur.archlinux.org/pear-channel-phpseclib.git
 [submodule "pear-channel-pear2"]
-	path = official/pear-channel-pear2
-	url = ssh+git://aur@aur.archlinux.org/pear-channel-pear2.git
+  path = official/pear-channel-pear2
+  url = ssh+git://aur@aur.archlinux.org/pear-channel-pear2.git
 [submodule "ruby-tuple"]
-	path = official/ruby-tuple
-	url = ssh+git://aur@aur.archlinux.org/ruby-tuple.git
+  path = official/ruby-tuple
+  url = ssh+git://aur@aur.archlinux.org/ruby-tuple.git
 [submodule "ruby-bdb"]
-	path = official/ruby-bdb
-	url = ssh+git://aur@aur.archlinux.org/ruby-bdb.git
+  path = official/ruby-bdb
+  url = ssh+git://aur@aur.archlinux.org/ruby-bdb.git
 [submodule "aegir-provision-tasks-extra"]
-	path = official/aegir-provision-tasks-extra
-	url = ssh+git://aur@aur.archlinux.org/aegir-provision-tasks-extra.git
+  path = official/aegir-provision-tasks-extra
+  url = ssh+git://aur@aur.archlinux.org/aegir-provision-tasks-extra.git
 [submodule "autorandr-git"]
-	path = official/autorandr-git
-	url = ssh+git://aur@aur.archlinux.org/autorandr-git.git
+  path = official/autorandr-git
+  url = ssh+git://aur@aur.archlinux.org/autorandr-git.git
 [submodule "auto-xflux"]
-	path = official/auto-xflux
-	url = ssh+git://aur@aur.archlinux.org/auto-xflux.git
+  path = official/auto-xflux
+  url = ssh+git://aur@aur.archlinux.org/auto-xflux.git
 [submodule "bash-utils-git"]
-	path = official/bash-utils-git
-	url = ssh+git://aur@aur.archlinux.org/bash-utils-git.git
+  path = official/bash-utils-git
+  url = ssh+git://aur@aur.archlinux.org/bash-utils-git.git
 [submodule "busybox-static"]
-	path = official/busybox-static
-	url = ssh+git://aur@aur.archlinux.org/busybox-static.git
+  path = official/busybox-static
+  url = ssh+git://aur@aur.archlinux.org/busybox-static.git
 [submodule "ciphershed-nogui-git"]
-	path = official/ciphershed-nogui-git
-	url = ssh+git://aur@aur.archlinux.org/ciphershed-nogui-git.git
+  path = official/ciphershed-nogui-git
+  url = ssh+git://aur@aur.archlinux.org/ciphershed-nogui-git.git
 [submodule "code2html"]
-	path = official/code2html
-	url = ssh+git://aur@aur.archlinux.org/code2html.git
+  path = official/code2html
+  url = ssh+git://aur@aur.archlinux.org/code2html.git
 [submodule "drupal-l10n"]
-	path = official/drupal-l10n
-	url = ssh+git://aur@aur.archlinux.org/drupal-l10n.git
+  path = official/drupal-l10n
+  url = ssh+git://aur@aur.archlinux.org/drupal-l10n.git
 [submodule "drupal8-git"]
-	path = unofficial/drupal8-git
-	url = ssh+git://aur@aur.archlinux.org/drupal8-git.git
+  path = unofficial/drupal8-git
+  url = ssh+git://aur@aur.archlinux.org/drupal8-git.git
 [submodule "drush"]
-	path = unofficial/drush
-	url = ssh+git://aur@aur.archlinux.org/drush.git
+  path = unofficial/drush
+  url = ssh+git://aur@aur.archlinux.org/drush.git
 [submodule "evolution-on-git"]
-	path = official/evolution-on-git
-	url = ssh+git://aur@aur.archlinux.org/evolution-on-git.git
+  path = official/evolution-on-git
+  url = ssh+git://aur@aur.archlinux.org/evolution-on-git.git
 [submodule "exfat-dkms-git"]
-	path = unofficial/exfat-dkms-git
-	url = ssh+git://aur@aur.archlinux.org/exfat-dkms-git.git
+  path = unofficial/exfat-dkms-git
+  url = ssh+git://aur@aur.archlinux.org/exfat-dkms-git.git
 [submodule "fbcmd-git"]
-	path = official/fbcmd-git
-	url = ssh+git://aur@aur.archlinux.org/fbcmd-git.git
+  path = official/fbcmd-git
+  url = ssh+git://aur@aur.archlinux.org/fbcmd-git.git
 [submodule "geany-astyle"]
-	path = official/geany-astyle
-	url = ssh+git://aur@aur.archlinux.org/geany-astyle.git
+  path = official/geany-astyle
+  url = ssh+git://aur@aur.archlinux.org/geany-astyle.git
 [submodule "geany-openscad"]
-	path = official/geany-openscad
-	url = ssh+git://aur@aur.archlinux.org/geany-openscad.git
+  path = official/geany-openscad
+  url = ssh+git://aur@aur.archlinux.org/geany-openscad.git
 [submodule "geany-snippets"]
-	path = official/geany-snippets
-	url = ssh+git://aur@aur.archlinux.org/geany-snippets.git
+  path = official/geany-snippets
+  url = ssh+git://aur@aur.archlinux.org/geany-snippets.git
 [submodule "geeknote-git"]
-	path = official/geeknote-git
-	url = ssh+git://aur@aur.archlinux.org/geeknote-git.git
+  path = official/geeknote-git
+  url = ssh+git://aur@aur.archlinux.org/geeknote-git.git
 [submodule "google-apps-manager"]
-	path = official/google-apps-manager
-	url = ssh+git://aur@aur.archlinux.org/google-apps-manager.git
+  path = official/google-apps-manager
+  url = ssh+git://aur@aur.archlinux.org/google-apps-manager.git
 [submodule "graphicsmagick-imagemagick-compat"]
-	path = official/graphicsmagick-imagemagick-compat
-	url = ssh+git://aur@aur.archlinux.org/graphicsmagick-imagemagick-compat.git
+  path = official/graphicsmagick-imagemagick-compat
+  url = ssh+git://aur@aur.archlinux.org/graphicsmagick-imagemagick-compat.git
 [submodule "jauth-git"]
-	path = official/jauth-git
-	url = ssh+git://aur@aur.archlinux.org/jauth-git.git
+  path = official/jauth-git
+  url = ssh+git://aur@aur.archlinux.org/jauth-git.git
 [submodule "jfbchat"]
-	path = official/jfbchat
-	url = ssh+git://aur@aur.archlinux.org/jfbchat.git
+  path = official/jfbchat
+  url = ssh+git://aur@aur.archlinux.org/jfbchat.git
 [submodule "kettu-git"]
-	path = official/kettu-git
-	url = ssh+git://aur@aur.archlinux.org/kettu-git.git
+  path = official/kettu-git
+  url = ssh+git://aur@aur.archlinux.org/kettu-git.git
 [submodule "libtomcrypt"]
-	path = official/libtomcrypt
-	url = ssh+git://aur@aur.archlinux.org/libtomcrypt.git
+  path = official/libtomcrypt
+  url = ssh+git://aur@aur.archlinux.org/libtomcrypt.git
 [submodule "libxrandr-git"]
-	path = official/libxrandr-git
-	url = ssh+git://aur@aur.archlinux.org/libxrandr-git.git
+  path = official/libxrandr-git
+  url = ssh+git://aur@aur.archlinux.org/libxrandr-git.git
 [submodule "makro"]
-	path = official/makro
-	url = ssh+git://aur@aur.archlinux.org/makro.git
+  path = official/makro
+  url = ssh+git://aur@aur.archlinux.org/makro.git
 [submodule "networkmanager-ifupdown"]
-	path = unofficial/networkmanager-ifupdown
-	url = ssh+git://aur@aur.archlinux.org/networkmanager-ifupdown.git
+  path = unofficial/networkmanager-ifupdown
+  url = ssh+git://aur@aur.archlinux.org/networkmanager-ifupdown.git
 [submodule "pecl-timezonedb"]
-	path = official/pecl-timezonedb
-	url = ssh+git://aur@aur.archlinux.org/pecl-timezonedb.git
+  path = official/pecl-timezonedb
+  url = ssh+git://aur@aur.archlinux.org/pecl-timezonedb.git
 [submodule "perl-xml-xsh"]
-	path = official/perl-xml-xsh
-	url = ssh+git://aur@aur.archlinux.org/perl-xml-xsh.git
+  path = official/perl-xml-xsh
+  url = ssh+git://aur@aur.archlinux.org/perl-xml-xsh.git
 [submodule "philesight"]
-	path = official/philesight
-	url = ssh+git://aur@aur.archlinux.org/philesight.git
+  path = official/philesight
+  url = ssh+git://aur@aur.archlinux.org/philesight.git
 [submodule "php-behat"]
-	path = official/php-behat
-	url = ssh+git://aur@aur.archlinux.org/php-behat.git
+  path = official/php-behat
+  url = ssh+git://aur@aur.archlinux.org/php-behat.git
 [submodule "pmd"]
-	path = official/pmd
-	url = ssh+git://aur@aur.archlinux.org/pmd.git
+  path = official/pmd
+  url = ssh+git://aur@aur.archlinux.org/pmd.git
 [submodule "pmd-bin"]
-	path = official/pmd-bin
-	url = ssh+git://aur@aur.archlinux.org/pmd-bin.git
+  path = official/pmd-bin
+  url = ssh+git://aur@aur.archlinux.org/pmd-bin.git
 [submodule "pmsencoder-bin"]
-	path = official/pmsencoder-bin
-	url = ssh+git://aur@aur.archlinux.org/pmsencoder-bin.git
+  path = official/pmsencoder-bin
+  url = ssh+git://aur@aur.archlinux.org/pmsencoder-bin.git
 [submodule "pnm2ppa"]
-	path = official/pnm2ppa
-	url = ssh+git://aur@aur.archlinux.org/pnm2ppa.git
+  path = official/pnm2ppa
+  url = ssh+git://aur@aur.archlinux.org/pnm2ppa.git
 [submodule "podsleuth"]
-	path = official/podsleuth
-	url = ssh+git://aur@aur.archlinux.org/podsleuth.git
+  path = official/podsleuth
+  url = ssh+git://aur@aur.archlinux.org/podsleuth.git
 [submodule "pommed-jalaziz"]
-	path = official/pommed-jalaziz
-	url = ssh+git://aur@aur.archlinux.org/pommed-jalaziz.git
+  path = official/pommed-jalaziz
+  url = ssh+git://aur@aur.archlinux.org/pommed-jalaziz.git
 [submodule "python-bencodepy"]
-	path = official/python-bencodepy
-	url = ssh+git://aur@aur.archlinux.org/python-bencodepy.git
+  path = official/python-bencodepy
+  url = ssh+git://aur@aur.archlinux.org/python-bencodepy.git
 [submodule "python2-creepy-git"]
-	path = official/python2-creepy-git
-	url = ssh+git://aur@aur.archlinux.org/python2-creepy-git.git
+  path = official/python2-creepy-git
+  url = ssh+git://aur@aur.archlinux.org/python2-creepy-git.git
 [submodule "python2-websocket-client-pebble"]
-	path = official/python2-websocket-client-pebble
-	url = ssh+git://aur@aur.archlinux.org/python2-websocket-client-pebble.git
+  path = official/python2-websocket-client-pebble
+  url = ssh+git://aur@aur.archlinux.org/python2-websocket-client-pebble.git
 [submodule "ruby-gstreamer"]
-	path = official/ruby-gstreamer
-	url = ssh+git://aur@aur.archlinux.org/ruby-gstreamer.git
+  path = official/ruby-gstreamer
+  url = ssh+git://aur@aur.archlinux.org/ruby-gstreamer.git
 [submodule "simian"]
-	path = unofficial/simian
-	url = ssh+git://aur@aur.archlinux.org/simian.git
+  path = unofficial/simian
+  url = ssh+git://aur@aur.archlinux.org/simian.git
 [submodule "slimrat"]
-	path = official/slimrat
-	url = ssh+git://aur@aur.archlinux.org/slimrat.git
+  path = official/slimrat
+  url = ssh+git://aur@aur.archlinux.org/slimrat.git
 [submodule "soundcli"]
-	path = official/soundcli
-	url = ssh+git://aur@aur.archlinux.org/soundcli.git
+  path = official/soundcli
+  url = ssh+git://aur@aur.archlinux.org/soundcli.git
 [submodule "speedtest-cli-git"]
-	path = official/speedtest-cli-git
-	url = ssh+git://aur@aur.archlinux.org/speedtest-cli-git.git
+  path = official/speedtest-cli-git
+  url = ssh+git://aur@aur.archlinux.org/speedtest-cli-git.git
 [submodule "stdoutisatty"]
-	path = official/stdoutisatty
-	url = ssh+git://aur@aur.archlinux.org/stdoutisatty.git
+  path = official/stdoutisatty
+  url = ssh+git://aur@aur.archlinux.org/stdoutisatty.git
 [submodule "subbrute-git"]
-	path = official/subbrute-git
-	url = ssh+git://aur@aur.archlinux.org/subbrute-git.git
+  path = official/subbrute-git
+  url = ssh+git://aur@aur.archlinux.org/subbrute-git.git
 [submodule "systemd-resolved-public-dns"]
-	path = official/systemd-resolved-public-dns
-	url = ssh+git://aur@aur.archlinux.org/systemd-resolved-public-dns.git
+  path = official/systemd-resolved-public-dns
+  url = ssh+git://aur@aur.archlinux.org/systemd-resolved-public-dns.git
 [submodule "tomcat8-solr"]
-	path = official/tomcat8-solr
-	url = ssh+git://aur@aur.archlinux.org/tomcat8-solr.git
+  path = official/tomcat8-solr
+  url = ssh+git://aur@aur.archlinux.org/tomcat8-solr.git
 [submodule "totp-cli"]
-	path = unofficial/totp-cli
-	url = ssh+git://aur@aur.archlinux.org/totp-cli.git
+  path = unofficial/totp-cli
+  url = ssh+git://aur@aur.archlinux.org/totp-cli.git
 [submodule "webui-aria2-git"]
-	path = official/webui-aria2-git
-	url = ssh+git://aur@aur.archlinux.org/webui-aria2-git.git
+  path = official/webui-aria2-git
+  url = ssh+git://aur@aur.archlinux.org/webui-aria2-git.git
 [submodule "wpa_supplicant-wext-systemd"]
-	path = official/wpa_supplicant-wext-systemd
-	url = ssh+git://aur@aur.archlinux.org/wpa_supplicant-wext-systemd.git
+  path = official/wpa_supplicant-wext-systemd
+  url = ssh+git://aur@aur.archlinux.org/wpa_supplicant-wext-systemd.git
 [submodule "xfce4-remmina-plugin"]
-	path = official/xfce4-remmina-plugin
-	url = ssh+git://aur@aur.archlinux.org/xfce4-remmina-plugin.git
+  path = official/xfce4-remmina-plugin
+  url = ssh+git://aur@aur.archlinux.org/xfce4-remmina-plugin.git
 [submodule "xorg-xrandr-git"]
-	path = official/xorg-xrandr-git
-	url = ssh+git://aur@aur.archlinux.org/xorg-xrandr-git.git
+  path = official/xorg-xrandr-git
+  url = ssh+git://aur@aur.archlinux.org/xorg-xrandr-git.git
 [submodule "iloot-git"]
-	path = official/iloot-git
-	url = ssh+git://aur@aur.archlinux.org/iloot-git.git
+  path = official/iloot-git
+  url = ssh+git://aur@aur.archlinux.org/iloot-git.git
 [submodule "kismet-plugins-restricted"]
-	path = official/kismet-plugins-restricted
-	url = ssh+git://aur@aur.archlinux.org/kismet-plugins-restricted.git
+  path = official/kismet-plugins-restricted
+  url = ssh+git://aur@aur.archlinux.org/kismet-plugins-restricted.git
 [submodule "leapcast-git"]
-	path = official/leapcast-git
-	url = ssh+git://aur@aur.archlinux.org/leapcast-git.git
+  path = official/leapcast-git
+  url = ssh+git://aur@aur.archlinux.org/leapcast-git.git
 [submodule "libde265"]
-	path = official/libde265
-	url = ssh+git://aur@aur.archlinux.org/libde265.git
+  path = official/libde265
+  url = ssh+git://aur@aur.archlinux.org/libde265.git
 [submodule "libfvde-git"]
-	path = official/libfvde-git
-	url = ssh+git://aur@aur.archlinux.org/libfvde-git.git
+  path = official/libfvde-git
+  url = ssh+git://aur@aur.archlinux.org/libfvde-git.git
 [submodule "nodejs-profitbricks-cli"]
-	path = official/nodejs-profitbricks-cli
-	url = ssh+git://aur@aur.archlinux.org/nodejs-profitbricks-cli.git
+  path = official/nodejs-profitbricks-cli
+  url = ssh+git://aur@aur.archlinux.org/nodejs-profitbricks-cli.git
 [submodule "pbzx-stream-parser"]
-	path = official/pbzx-stream-parser
-	url = ssh+git://aur@aur.archlinux.org/pbzx-stream-parser.git
+  path = official/pbzx-stream-parser
+  url = ssh+git://aur@aur.archlinux.org/pbzx-stream-parser.git
 [submodule "php-cairo-git"]
-	path = official/php-cairo-git
-	url = ssh+git://aur@aur.archlinux.org/php-cairo-git.git
+  path = official/php-cairo-git
+  url = ssh+git://aur@aur.archlinux.org/php-cairo-git.git
 [submodule "php-gtk-git"]
-	path = official/php-gtk-git
-	url = ssh+git://aur@aur.archlinux.org/php-gtk-git.git
+  path = official/php-gtk-git
+  url = ssh+git://aur@aur.archlinux.org/php-gtk-git.git
 [submodule "pimpmylog-git"]
-	path = official/pimpmylog-git
-	url = ssh+git://aur@aur.archlinux.org/pimpmylog-git.git
+  path = official/pimpmylog-git
+  url = ssh+git://aur@aur.archlinux.org/pimpmylog-git.git
 [submodule "python-gntp"]
-	path = official/python-gntp
-	url = ssh+git://aur@aur.archlinux.org/python-gntp.git
+  path = official/python-gntp
+  url = ssh+git://aur@aur.archlinux.org/python-gntp.git
 [submodule "python-hghooks"]
-	path = official/python-hghooks
-	url = ssh+git://aur@aur.archlinux.org/python-hghooks.git
+  path = official/python-hghooks
+  url = ssh+git://aur@aur.archlinux.org/python-hghooks.git
 [submodule "python-pushnotify"]
-	path = official/python-pushnotify
-	url = ssh+git://aur@aur.archlinux.org/python-pushnotify.git
+  path = official/python-pushnotify
+  url = ssh+git://aur@aur.archlinux.org/python-pushnotify.git
 [submodule "python-pyjslint"]
-	path = official/python-pyjslint
-	url = ssh+git://aur@aur.archlinux.org/python-pyjslint.git
+  path = official/python-pyjslint
+  url = ssh+git://aur@aur.archlinux.org/python-pyjslint.git
 [submodule "refind-efi-git"]
-	path = official/refind-efi-git
-	url = ssh+git://aur@aur.archlinux.org/refind-efi-git.git
+  path = official/refind-efi-git
+  url = ssh+git://aur@aur.archlinux.org/refind-efi-git.git
 [submodule "solr1.4-war"]
-	path = official/solr1.4-war
-	url = ssh+git://aur@aur.archlinux.org/solr1.4-war.git
+  path = official/solr1.4-war
+  url = ssh+git://aur@aur.archlinux.org/solr1.4-war.git
 [submodule "solr3-war"]
-	path = official/solr3-war
-	url = ssh+git://aur@aur.archlinux.org/solr3-war.git
+  path = official/solr3-war
+  url = ssh+git://aur@aur.archlinux.org/solr3-war.git
 [submodule "solr4-war"]
-	path = official/solr4-war
-	url = ssh+git://aur@aur.archlinux.org/solr4-war.git
+  path = official/solr4-war
+  url = ssh+git://aur@aur.archlinux.org/solr4-war.git
 [submodule "solr5-zip"]
-	path = official/solr5-zip
-	url = ssh+git://aur@aur.archlinux.org/solr5-zip.git
+  path = official/solr5-zip
+  url = ssh+git://aur@aur.archlinux.org/solr5-zip.git
 [submodule "solr-undertow"]
-	path = official/solr-undertow
-	url = ssh+git://aur@aur.archlinux.org/solr-undertow.git
+  path = official/solr-undertow
+  url = ssh+git://aur@aur.archlinux.org/solr-undertow.git
 [submodule "xtables-addons-dkms"]
-	path = official/xtables-addons-dkms
-	url = ssh+git://aur@aur.archlinux.org/xtables-addons-dkms.git
+  path = official/xtables-addons-dkms
+  url = ssh+git://aur@aur.archlinux.org/xtables-addons-dkms.git
 [submodule "zinnia-git"]
-	path = official/zinnia-git
-	url = ssh+git://aur@aur.archlinux.org/zinnia-git.git
+  path = official/zinnia-git
+  url = ssh+git://aur@aur.archlinux.org/zinnia-git.git
 [submodule "official/drush-git"]
-	path = official/drush-git
-	url = ssh+git://aur@aur.archlinux.org/drush-git.git
+  path = official/drush-git
+  url = ssh+git://aur@aur.archlinux.org/drush-git.git
 [submodule "official/apple_set_os"]
-	path = official/apple_set_os
-	url = ssh+git://aur@aur.archlinux.org/apple_set_os.git
+  path = official/apple_set_os
+  url = ssh+git://aur@aur.archlinux.org/apple_set_os.git
 [submodule "official/cloudfusion-git"]
-	path = official/cloudfusion-git
-	url = ssh+git://aur@aur.archlinux.org/cloudfusion-git.git
+  path = official/cloudfusion-git
+  url = ssh+git://aur@aur.archlinux.org/cloudfusion-git.git
 [submodule "official/clover-efi"]
-	path = official/clover-efi
-	url = ssh+git://aur@aur.archlinux.org/clover-efi.git
+  path = official/clover-efi
+  url = ssh+git://aur@aur.archlinux.org/clover-efi.git
 [submodule "official/db6.2"]
-	path = official/db6.2
-	url = ssh+git://aur@aur.archlinux.org/db6.2.git
+  path = official/db6.2
+  url = ssh+git://aur@aur.archlinux.org/db6.2.git
 [submodule "unofficial/darling-dmg-git"]
-	path = unofficial/darling-dmg-git
-	url = git@github.com:jamesan-unofficial-aur-pkgs/darling-dmg-git.git
+  path = unofficial/darling-dmg-git
+  url = git@github.com:jamesan-unofficial-aur-pkgs/darling-dmg-git.git
 [submodule "unofficial/php-twig-git"]
-	path = unofficial/php-twig-git
-	url = git@github.com:jamesan-unofficial-aur-pkgs/php-twig-git.git
+  path = unofficial/php-twig-git
+  url = git@github.com:jamesan-unofficial-aur-pkgs/php-twig-git.git
 [submodule "wip/deluge-plugins"]
-	path = unofficial/deluge-plugins
-	url = ssh+git://aur@aur.archlinux.org/deluge-plugins.git
+  path = unofficial/deluge-plugins
+  url = ssh+git://aur@aur.archlinux.org/deluge-plugins.git
 [submodule "unofficial/obs-studio-git"]
-	path = unofficial/obs-studio-git
-	url = git@github.com:jamesan-unofficial-aur-pkgs/obs-studio-git.git
+  path = unofficial/obs-studio-git
+  url = git@github.com:jamesan-unofficial-aur-pkgs/obs-studio-git.git
 [submodule "wip/droidcam-dkms"]
-	path = wip/droidcam-dkms
-	url = git@github.com:jamesan-unofficial-aur-pkgs/droidcam-dkms.git
+  path = wip/droidcam-dkms
+  url = git@github.com:jamesan-unofficial-aur-pkgs/droidcam-dkms.git
 [submodule "wip/omplapp-git"]
-	path = wip/omplapp-git
-	url = git@github.com:jamesan-unofficial-aur-pkgs/omplapp-git.git
+  path = wip/omplapp-git
+  url = git@github.com:jamesan-unofficial-aur-pkgs/omplapp-git.git
 [submodule "wip/ompl-git"]
-	path = wip/ompl-git
-	url = git@github.com:jamesan-unofficial-aur-pkgs/ompl-git.git
+  path = wip/ompl-git
+  url = git@github.com:jamesan-unofficial-aur-pkgs/ompl-git.git
 [submodule "official/drush-extensions"]
-	path = official/drush-extensions
-	url = ssh+git://aur@aur.archlinux.org/drush-extensions.git
+  path = official/drush-extensions
+  url = ssh+git://aur@aur.archlinux.org/drush-extensions.git
 [submodule "unofficial/rescuetime"]
-	path = unofficial/rescuetime
-	url = git@github.com:jamesan-unofficial-aur-pkgs/rescuetime.git
+  path = unofficial/rescuetime
+  url = git@github.com:jamesan-unofficial-aur-pkgs/rescuetime.git
 [submodule "official/php-datastructures-git"]
-	path = official/php-datastructures-git
-	url = ssh+git://aur@aur.archlinux.org/php-datastructures-git.git
+  path = official/php-datastructures-git
+  url = ssh+git://aur@aur.archlinux.org/php-datastructures-git.git
 [submodule "unofficial/selfspy-git"]
-	path = unofficial/selfspy-git
-	url = git@github.com:jamesan-unofficial-aur-pkgs/selfspy-git.git
+  path = unofficial/selfspy-git
+  url = git@github.com:jamesan-unofficial-aur-pkgs/selfspy-git.git
 [submodule "unofficial/cvsps2"]
-	path = unofficial/cvsps2
-	url = git@github.com:jamesan-unofficial-aur-pkgs/cvsps2.git
+  path = unofficial/cvsps2
+  url = git@github.com:jamesan-unofficial-aur-pkgs/cvsps2.git
 [submodule "unofficial/gephi"]
-	path = unofficial/gephi
-	url = git@github.com:jamesan-unofficial-aur-pkgs/gephi.git
+  path = unofficial/gephi
+  url = git@github.com:jamesan-unofficial-aur-pkgs/gephi.git
 [submodule "official/terminus"]
-	path = official/terminus
-	url = ssh+git://aur@aur.archlinux.org/terminus.git
+  path = official/terminus
+  url = ssh+git://aur@aur.archlinux.org/terminus.git
 [submodule "official/platformsh-cli-git"]
-	path = official/platformsh-cli-git
-	url = ssh+git://aur@aur.archlinux.org/platformsh-cli-git.git
+  path = official/platformsh-cli-git
+  url = ssh+git://aur@aur.archlinux.org/platformsh-cli-git.git
 [submodule "official/drush-scaffolding"]
-	path = official/drush-scaffolding
-	url = ssh+git://aur@aur.archlinux.org/drush-scaffolding.git
+  path = official/drush-scaffolding
+  url = ssh+git://aur@aur.archlinux.org/drush-scaffolding.git
 [submodule "unofficial/flynn-cli"]
-	path = unofficial/flynn-cli
-	url = https://aur.archlinux.org/flynn-cli.git
+  path = unofficial/flynn-cli
+  url = https://aur.archlinux.org/flynn-cli.git
+[submodule "jsonix-schema-compiler"]
+  path = official/jsonix-schema-compiler
+  url = ssh+git://aur@aur.archlinux.org/jsonix-schema-compiler.git
+[submodule "nodejs-ajv"]
+  path = official/nodejs-ajv
+  url = ssh+git://aur@aur.archlinux.org/nodejs-ajv.git
+[submodule "nodejs-ajv-cli"]
+  path = official/nodejs-ajv-cli
+  url = ssh+git://aur@aur.archlinux.org/nodejs-ajv-cli.git
+
