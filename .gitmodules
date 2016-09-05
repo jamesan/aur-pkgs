@@ -328,3 +328,6 @@
 [submodule "official/drush-scaffolding"]
 	path = official/drush-scaffolding
 	url = ssh+git://aur@aur.archlinux.org/drush-scaffolding.git
+[submodule "unofficial/flynn-cli"]
+	path = unofficial/flynn-cli
+	url = https://aur.archlinux.org/flynn-cli.git
