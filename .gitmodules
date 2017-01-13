@@ -341,3 +341,6 @@
   path = official/nodejs-ajv-cli
   url = ssh+git://aur@aur.archlinux.org/nodejs-ajv-cli.git
 
+[submodule "unofficial/evdi"]
+	path = unofficial/evdi
+	url = ssh+git://aur@aur.archlinux.org/evdi.git
