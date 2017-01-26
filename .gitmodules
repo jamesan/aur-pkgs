@@ -344,3 +344,6 @@
 [submodule "unofficial/evdi"]
 	path = unofficial/evdi
 	url = ssh+git://aur@aur.archlinux.org/evdi.git
+[submodule "official/php-codesniffer-drupalsecure"]
+	path = official/php-codesniffer-drupalsecure
+	url = ssh+git://aur@aur.archlinux.org/php-codesniffer-drupalsecure.git
