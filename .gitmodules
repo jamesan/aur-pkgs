@@ -340,10 +340,12 @@
 [submodule "nodejs-ajv-cli"]
   path = official/nodejs-ajv-cli
   url = ssh+git://aur@aur.archlinux.org/nodejs-ajv-cli.git
-
 [submodule "unofficial/evdi"]
 	path = unofficial/evdi
 	url = ssh+git://aur@aur.archlinux.org/evdi.git
 [submodule "official/php-codesniffer-drupalsecure"]
 	path = official/php-codesniffer-drupalsecure
 	url = ssh+git://aur@aur.archlinux.org/php-codesniffer-drupalsecure.git
+[submodule "official/dupd-git"]
+	path = official/dupd-git
+	url = ssh+git://aur@aur.archlinux.org/dupd-git.git
