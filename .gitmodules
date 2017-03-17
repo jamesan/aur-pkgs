@@ -349,3 +349,9 @@
 [submodule "official/dupd-git"]
 	path = official/dupd-git
 	url = ssh+git://aur@aur.archlinux.org/dupd-git.git
+[submodule "official/ruby-activerecord-utils"]
+	path = official/ruby-activerecord-utils
+	url = ssh+git://aur@aur.archlinux.org/ruby-activerecord-utils.git
+[submodule "official/ruby-datafile"]
+	path = official/ruby-datafile
+	url = ssh+git://aur@aur.archlinux.org/ruby-datafile.git
