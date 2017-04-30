@@ -40,6 +40,9 @@
 [submodule "ruby-bdb"]
   path = official/ruby-bdb
   url = ssh+git://aur@aur.archlinux.org/ruby-bdb.git
+[submodule "ruby-activerecord-utils"]
+  path = official/ruby-activerecord-utils
+  url = ssh+git://aur@aur.archlinux.org/ruby-activerecord-utils.git
 [submodule "aegir-provision-tasks-extra"]
   path = official/aegir-provision-tasks-extra
   url = ssh+git://aur@aur.archlinux.org/aegir-provision-tasks-extra.git
@@ -295,6 +298,9 @@
 [submodule "wip/droidcam-dkms"]
   path = wip/droidcam-dkms
   url = git@github.com:jamesan-unofficial-aur-pkgs/droidcam-dkms.git
+[submodule "unofficial/droidcam"]
+	path = unofficial/droidcam
+	url = git@github.com:jamesan-unofficial-aur-pkgs/droidcam.git
 [submodule "wip/omplapp-git"]
   path = wip/omplapp-git
   url = git@github.com:jamesan-unofficial-aur-pkgs/omplapp-git.git
