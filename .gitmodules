@@ -358,3 +358,6 @@
 [submodule "official/openresty-git"]
 	path = official/openresty-git
 	url = ssh+git://aur@aur.archlinux.org/openresty-git.git
+[submodule "official/pinot-search-git"]
+	path = official/pinot-search-git
+	url = ssh+git://aur@aur.archlinux.org/pinot-search-git.git
