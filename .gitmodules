@@ -361,3 +361,6 @@
 [submodule "official/pinot-search-git"]
 	path = official/pinot-search-git
 	url = ssh+git://aur@aur.archlinux.org/pinot-search-git.git
+[submodule "official/ruby-thin-1.5"]
+	path = official/ruby-thin-1.5
+	url = ssh+git://aur@aur.archlinux.org/ruby-thin-1.5.git
