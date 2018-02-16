@@ -364,3 +364,6 @@
 [submodule "official/ruby-thin-1.5"]
 	path = official/ruby-thin-1.5
 	url = ssh+git://aur@aur.archlinux.org/ruby-thin-1.5.git
+[submodule "official/drush-launcher-git"]
+	path = official/drush-launcher-git
+	url = ssh+git://aur@aur.archlinux.org/drush-launcher-git.git
