@@ -55,9 +55,6 @@
 [submodule "bash-utils-git"]
   path = official/bash-utils-git
   url = ssh+git://aur@aur.archlinux.org/bash-utils-git.git
-[submodule "busybox-static"]
-  path = official/busybox-static
-  url = ssh+git://aur@aur.archlinux.org/busybox-static.git
 [submodule "ciphershed-nogui-git"]
   path = official/ciphershed-nogui-git
   url = ssh+git://aur@aur.archlinux.org/ciphershed-nogui-git.git
