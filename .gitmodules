@@ -364,3 +364,12 @@
 [submodule "official/drush-launcher-git"]
 	path = official/drush-launcher-git
 	url = ssh+git://aur@aur.archlinux.org/drush-launcher-git.git
+[submodule "official/python2-gsutil"]
+	path = official/python2-gsutil
+	url = ssh+git://aur@aur.archlinux.org/python2-gsutil.git
+[submodule "official/python2-ntplib"]
+	path = official/python2-ntplib
+	url = ssh+git://aur@aur.archlinux.org/python2-ntplib.git
+[submodule "official/python2-tinydav"]
+	path = official/python2-tinydav
+	url = ssh+git://aur@aur.archlinux.org/python2-tinydav.git
