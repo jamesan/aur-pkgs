@@ -376,3 +376,6 @@
 [submodule "official/php-suhosin7-git"]
 	path = official/php-suhosin7-git
 	url = ssh+git://aur@aur.archlinux.org/php-suhosin7-git.git
+[submodule "official/alacarte-xfce"]
+	path = official/alacarte-xfce
+	url = ssh+git://aur@aur.archlinux.org/alacarte-xfce.git
