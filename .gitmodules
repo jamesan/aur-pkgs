@@ -373,3 +373,6 @@
 [submodule "official/python2-tinydav"]
 	path = official/python2-tinydav
 	url = ssh+git://aur@aur.archlinux.org/python2-tinydav.git
+[submodule "official/php-suhosin7-git"]
+	path = official/php-suhosin7-git
+	url = ssh+git://aur@aur.archlinux.org/php-suhosin7-git.git
