@@ -379,3 +379,9 @@
 [submodule "official/alacarte-xfce"]
 	path = official/alacarte-xfce
 	url = ssh+git://aur@aur.archlinux.org/alacarte-xfce.git
+[submodule "official/selfspy-vis-git"]
+	path = official/selfspy-vis-git
+	url = ssh+git://aur@aur.archlinux.org/selfspy-vis-git.git
+[submodule "official/terminus-git"]
+	path = official/terminus-git
+	url = ssh+git://aur@aur.archlinux.org/terminus-git.git
