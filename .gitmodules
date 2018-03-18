@@ -385,3 +385,6 @@
 [submodule "official/terminus-git"]
 	path = official/terminus-git
 	url = ssh+git://aur@aur.archlinux.org/terminus-git.git
+[submodule "official/nodejs-profitbricks-cli"]
+	path = official/nodejs-profitbricks-cli
+	url = ssh+git://aur@aur.archlinux.org/nodejs-profitbricks-cli.git
