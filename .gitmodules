@@ -388,3 +388,6 @@
 [submodule "official/nodejs-profitbricks-cli"]
 	path = official/nodejs-profitbricks-cli
 	url = ssh+git://aur@aur.archlinux.org/nodejs-profitbricks-cli.git
+[submodule "official/minica-git"]
+	path = official/minica-git
+	url = ssh+git://aur@aur.archlinux.org/minica-git.git
