@@ -391,3 +391,6 @@
 [submodule "official/minica-git"]
 	path = official/minica-git
 	url = ssh+git://aur@aur.archlinux.org/minica-git.git
+[submodule "official/python2-volatility"]
+	path = official/python2-volatility
+	url = ssh+git://aur@aur.archlinux.org/python2-volatility.git
