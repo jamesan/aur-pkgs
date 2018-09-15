@@ -394,3 +394,6 @@
 [submodule "official/python2-volatility"]
 	path = official/python2-volatility
 	url = ssh+git://aur@aur.archlinux.org/python2-volatility.git
+[submodule "official/ksplice-git"]
+	path = official/ksplice-git
+	url = ssh+git://aur@aur.archlinux.org/ksplice-git.git
