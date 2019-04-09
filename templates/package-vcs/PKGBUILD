@@ -1,0 +1,77 @@
+# Maintainer: James An <james@jamesan.ca>
+
+pkgname=package-vcs
+_pkgname=${pkgname%-vcs}
+pkgver=TODO
+pkgrel=1
+pkgdesc="Package description terminated by a period."
+arch=('any' 'x86_64' 'i686')
+url="http://$_pkgname.readthedocs.io"
+license=('GPL' 'MIT' 'unknown')
+depends=('git')
+provides=("$_pkgname=$pkgver")
+conflicts=("$_pkgname")
+options=()
+install=
+source=("$_pkgname"::"git+https://github.com/author/$_pkgname.git")
+md5sums=('SKIP')
+
+pkgver() {
+  cd "$_pkgname"
+  (
+    set -o pipefail
+    git describe --long --tag | sed -r 's/([^-]*-g)/r\1/;s/-/./g' ||
+    printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+  )
+}
+
+build() {
+  cd "$_pkgname"
+
+  ./autogen.sh --prefix=/usr
+  make
+
+  [ -d build ] || mkdir build
+  meson --buildtype=release --prefix=/usr build .
+  cd build
+  ninja
+}
+
+check() {
+  cd "$_pkgname"
+
+  make -k check
+
+  cd build
+  ninja moduletest
+  ninja test
+}
+
+package() {
+  cd "$_pkgname"
+
+  make DESTDIR="$pkgdir/" install
+
+  cd build
+  ninja install
+
+  # pruning unnecessary files
+  rm -rf "$pkgdir/etc/rc.d"
+  rm -rf "$pkgdir/etc/init.d"
+
+  # installing package into opt
+  install -m755 -d "$pkgdir/opt"
+  cp -R "$_pkgname" "$pkgdir/opt/"
+
+  # installing doc files
+  install -m755 -d "$pkgdir/usr/share/doc/$_pkgname"
+  cp -R doc/* "$pkgdir/usr/share/doc/$_pkgname"
+
+  # installing the license
+  install -D -m644 LICENSE*d "$pkgdir/usr/share/licenses/$_pkgname/LICENSE"
+
+  # correct file permissions (disabling file execution)
+  find "$pkgdir" -type f -exec chmod 0644 {} +
+  find "$pkgdir" -type d -exec chmod 0755 {} +
+  find "$pkgdir/usr/bin" -type f -exec chmod 0755 {} +
+}
