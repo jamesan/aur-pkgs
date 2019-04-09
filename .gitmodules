@@ -397,3 +397,9 @@
 [submodule "official/ksplice-git"]
 	path = official/ksplice-git
 	url = ssh+git://aur@aur.archlinux.org/ksplice-git.git
+[submodule "official/narg-git"]
+	path = official/narg-git
+	url = ssh+git://aur@aur.archlinux.org/narg-git.git
+[submodule "official/selfdock-git"]
+	path = official/selfdock-git
+	url = ssh+git://aur@aur.archlinux.org/selfdock-git.git
